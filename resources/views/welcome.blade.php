@@ -1,4 +1,4 @@
-@extends('layouts.welcome')
+@extends('layouts.ubt')
 
 @section('content')
     <section class="section-frame br-fix overflow-hidden" id="home">
@@ -60,15 +60,15 @@
                     <div class="row gy-3 gx-xl-8">
                         <div class="col-xl-6">
                             <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-                                <li><span><i class="uil uil-check"></i></span><span>Music.</span></li>
-                                <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Dancing.</span></li>
+                                <li><span><i class="fa fa-check"></i></span><span>Music.</span></li>
+                                <li class="mt-3"><span><i class="fa fa-check"></i></span><span>Dancing.</span></li>
                             </ul>
                         </div>
                         <!--/column -->
                         <div class="col-xl-6">
                             <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
-                                <li><span><i class="uil uil-check"></i></span><span>Drama.</span></li>
-                                <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Performing arts.</span>
+                                <li><span><i class="fa fa-check"></i></span><span>Drama.</span></li>
+                                <li class="mt-3"><span><i class="fa fa-check"></i></span><span>Performing arts.</span>
                                 </li>
                             </ul>
                         </div>
@@ -162,6 +162,7 @@
     <section class="wrapper bg-light">
         <div class="container pt-14 pt-md-16 pb-15 pb-md-17">
             <!-- /.row -->
+            
             <div class="row">
                 <div class="col-xxl-11 mx-auto">
                     <div class="row gx-lg-8 gx-xl-12 gy-11 text-center d-flex align-items-end">
@@ -209,15 +210,19 @@
                     <div class="row gy-4">
                         <div class="col-md-12">
                             <h4><span class="text-primary">1.</span> Youth Empowerment</h4>
-                            <p class="mb-0">Create and promote safe spaces for unleashing youth talents and innovative potentials that are cultural relevant.</p>
+                            <p class="mb-0">Create and promote safe spaces for unleashing youth talents and innovative
+                                potentials that are cultural relevant.</p>
                         </div>
                         <div class="col-md-12">
                             <h4><span class="text-primary">2.</span> Youth Activism</h4>
-                            <p class="mb-0">Empower youth creativity and cultural activism among youth, to use their talents for influencing positive behavior, attitudes, and social change.</p>
+                            <p class="mb-0">Empower youth creativity and cultural activism among youth, to use their
+                                talents for influencing positive behavior, attitudes, and social change.</p>
                         </div>
                         <div class="col-md-12">
                             <h4><span class="text-primary">3.</span> Cultural Heritage Awareness</h4>
-                            <p class="mb-0">Raising awareness on the usefulness of arts and talents to foster/promote the identity of the country's cultural heritage such as our tradition/tribal cultures, cultural heritage sites and tourist attractions.</p>
+                            <p class="mb-0">Raising awareness on the usefulness of arts and talents to foster/promote the
+                                identity of the country's cultural heritage such as our tradition/tribal cultures, cultural
+                                heritage sites and tourist attractions.</p>
                         </div>
                         <!--/column -->
                     </div>
@@ -276,7 +281,157 @@
     </section>
     <!--/section -->
     <section class="wrapper bg-light">
-        <div class="container py-15 py-md-17">
+        <div class="container py-14 py-md-16">
+            <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                <div class="col-lg-4">
+                    <h2 class="fs-15 text-uppercase text-line text-primary text-center mb-3">Meet the Team</h2>
+                    <h3 class="display-5 mb-5">Introducing our team dedicated to nurturing creativity and cultural
+                        excellence..</h3>
+                    <p>Our team is passionately committed to realizing our vision of establishing a center of excellence in
+                        culture and arts that unearths, nurtures, and develops young talent while promoting Tanzania's
+                        cultural heritage..</p>
+                    <a href="#"
+                        class="btn btn-primary rounded-pill mt-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </div>
+                <!--/column -->
+                <div class="col-lg-8">
+                    <div class="swiper-container text-center mb-6" data-margin="30" data-dots="true" data-items-xl="3"
+                        data-items-md="2" data-items-xs="1">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t1.jpg"
+                                        srcset="./img/avatars/t1@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Masudi Bashiri Kandoro</h4>
+                                    <div class="meta mb-2">Managing Director</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t2.jpg"
+                                        srcset="/img/avatars/t2@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Nguza A Kinonda</h4>
+                                    <div class="meta mb-2">Finance Manager</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t3.jpg"
+                                        srcset="/img/avatars/t3@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Emmanuel Mabodo</h4>
+                                    <div class="meta mb-2">Project Coordinato</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t4.jpg"
+                                        srcset="/img/avatars/t4@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Dimar Adolph</h4>
+                                    <div class="meta mb-2">Program and Performing Arts Manager</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Issa Bakari</h4>
+                                    <div class="meta mb-2"> Assistant Program and Performing Arts Manager</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Suleiman Hassan</h4>
+                                    <div class="meta mb-2"> Graphic Designer and Social Media Manager</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Glory Michael Nyangusi</h4>
+                                    <div class="meta mb-2"> Administrator and Community Manager</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Goodluck Mwakasungura</h4>
+                                    <div class="meta mb-2"> Production Manager</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                                <div class="swiper-slide">
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <h4 class="mb-1">Jacob Mulikuza</h4>
+                                    <div class="meta mb-2"> Project Consultant</div>
+                                    <nav class="nav social justify-content-center text-center mb-0">
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-facebook"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                                <!--/.swiper-slide -->
+                            </div>
+                            <!--/.swiper-wrapper -->
+                        </div>
+                        <!-- /.swiper -->
+                    </div>
+                    <!-- /.swiper-container -->
+                </div>
+                <!--/column -->
+            </div>
+            <!--/.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="wrapper bg-light">
+        <div class="container py-15 py-md-0">
             <div class="row">
                 <div class="col-lg-10 col-xl-8 mx-auto text-center">
                     <h2 class="fs-16 text-uppercase text-muted mb-3">Latest Projects</h2>
@@ -399,6 +554,8 @@
             </div>
         </div>
         <!-- /.container -->
+
+        <hr class="dark my-14 my-md-17" />
     </section>
     <!-- /section -->
     </div>
