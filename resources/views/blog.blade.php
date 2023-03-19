@@ -33,7 +33,7 @@
                                 <div class="card-body">
                                     <div class="post-header">
                                         <div class="post-category text-line">
-                                            <a href="#" class="hover" rel="category">Teamwork</a>
+                                            <a href="readblog" class="hover" rel="category">Teamwork</a>
                                         </div>
                                         <!-- /.post-category -->
                                         <h2 class="post-title mt-1 mb-0"><a class="link-dark" href="blog-post.html">Amet
@@ -60,8 +60,7 @@
                                                     Sandbox</span></a></li>
                                         <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span>
                                                     Comments</span></a></li>
-                                        <li class="post-likes ms-auto"><a href="#"><i
-                                                    class="uil uil-heart-alt"></i>3</a></li>
+                                        <li class="post-likes ms-auto"><a href="readblog" style="color: #6b0304;">Read More</a></li>
                                     </ul>
                                     <!-- /.post-meta -->
                                 </div>

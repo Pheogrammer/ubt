@@ -30,6 +30,11 @@ Route::get('blog', function () {
     return view('blog');
 });
 
+
+Route::get('readblog', function () {
+    return view('readblog');
+});
+
 Route::get('viewproject', function () {
     return view('viewproject');
 });

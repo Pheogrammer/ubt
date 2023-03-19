@@ -37,12 +37,10 @@
                         style="top: 3rem; left: 5.5rem"></div>
                     <div class="overlap-grid overlap-grid-2">
                         <div class="item">
-                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/sing.jpg') }}"
-                                    srcset="{{ asset('/img/photos/about2@2x.jpg') }} 2x" alt=""></figure>
+                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/sing.jpg') }}" alt=""></figure>
                         </div>
                         <div class="item">
-                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/shoutout.jpg') }}"
-                                    srcset="{{ asset('/img/photos/about3@2x.jpg') }} 2x" alt=""></figure>
+                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/shoutout.jpg') }}" alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -162,7 +160,7 @@
     <section class="wrapper bg-light">
         <div class="container pt-14 pt-md-16 pb-15 pb-md-17">
             <!-- /.row -->
-            
+
             <div class="row">
                 <div class="col-xxl-11 mx-auto">
                     <div class="row gx-lg-8 gx-xl-12 gy-11 text-center d-flex align-items-end">
@@ -200,8 +198,7 @@
             <hr class="dark my-14 my-md-17" />
             <div class="row gx-lg-8 gx-xl-12 gy-10 mb-15 mb-md-12 align-items-center">
                 <div class="col-lg-7">
-                    <figure><img class="w-auto" src="{{ asset('/img/illustrations/i9.png') }}"
-                            srcset="/img/illustrations/i9@2x.png 2x" alt="" /></figure>
+                    <figure><img class="w-auto" src="{{ asset('/img/illustrations/i8.png') }}" alt="" /></figure>
                 </div>
                 <!--/column -->
                 <div class="col-lg-5">
@@ -301,8 +298,7 @@
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t1.jpg"
-                                        srcset="./img/avatars/t1@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t1.jpg" alt="" />
                                     <h4 class="mb-1">Masudi Bashiri Kandoro</h4>
                                     <div class="meta mb-2">Managing Director</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -314,8 +310,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t2.jpg"
-                                        srcset="/img/avatars/t2@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t2.jpg" alt="" />
                                     <h4 class="mb-1">Nguza A Kinonda</h4>
                                     <div class="meta mb-2">Finance Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -327,8 +322,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t3.jpg"
-                                        srcset="/img/avatars/t3@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t3.jpg" alt="" />
                                     <h4 class="mb-1">Emmanuel Mabodo</h4>
                                     <div class="meta mb-2">Project Coordinato</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -340,8 +334,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t4.jpg"
-                                        srcset="/img/avatars/t4@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t4.jpg" alt="" />
                                     <h4 class="mb-1">Dimar Adolph</h4>
                                     <div class="meta mb-2">Program and Performing Arts Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -353,8 +346,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
                                     <h4 class="mb-1">Issa Bakari</h4>
                                     <div class="meta mb-2"> Assistant Program and Performing Arts Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -366,8 +358,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
                                     <h4 class="mb-1">Suleiman Hassan</h4>
                                     <div class="meta mb-2"> Graphic Designer and Social Media Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -379,8 +370,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
                                     <h4 class="mb-1">Glory Michael Nyangusi</h4>
                                     <div class="meta mb-2"> Administrator and Community Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -392,8 +382,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
                                     <h4 class="mb-1">Goodluck Mwakasungura</h4>
                                     <div class="meta mb-2"> Production Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -405,8 +394,7 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        srcset="/img/avatars/t5@2x.jpg 2x" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
                                     <h4 class="mb-1">Jacob Mulikuza</h4>
                                     <div class="meta mb-2"> Project Consultant</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -446,14 +434,13 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd7.jpg') }}"
-                                    srcset="/img/photos/pd7@2x.jpg 2x" alt="" /><a class="item-link"
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd7.jpg') }}" alt="" /><a class="item-link"
                                     href="/img/photos/pd7-full.jpg" data-glightbox data-gallery="projects-group"><i
                                         class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
-                                    <h2 class="post-title h3"><a href="./single-project.html" class="link-dark">Cras
+                                    <h2 class="post-title h3"><a href="#" class="link-dark">Cras
                                             Fermentum Sem</a></h2>
                                     <div class="post-category text-ash">Stationary</div>
                                 </div>
@@ -463,14 +450,13 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd8.jpg') }}"
-                                    srcset="/img/photos/pd8@2x.jpg 2x" alt="" /><a class="item-link"
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd8.jpg') }}" alt="" /><a class="item-link"
                                     href="/img/photos/pd8-full.jpg" data-glightbox data-gallery="projects-group"><i
                                         class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
-                                    <h2 class="post-title h3"><a href="./single-project2.html" class="link-dark">Mollis
+                                    <h2 class="post-title h3"><a href="#" class="link-dark">Mollis
                                             Ipsum Mattis</a></h2>
                                     <div class="post-category text-ash">Magazine, Book</div>
                                 </div>
@@ -480,14 +466,13 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd9.jpg') }}"
-                                    srcset="/img/photos/pd9@2x.jpg 2x" alt="" /><a class="item-link"
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd9.jpg') }}" alt="" /><a class="item-link"
                                     href="/img/photos/pd9-full.jpg" data-glightbox data-gallery="projects-group"><i
                                         class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
-                                    <h2 class="post-title h3"><a href="./single-project3.html" class="link-dark">Ipsum
+                                    <h2 class="post-title h3"><a href="#" class="link-dark">Ipsum
                                             Ultricies Cursus</a></h2>
                                     <div class="post-category text-ash">Packaging</div>
                                 </div>
@@ -497,14 +482,13 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd10.jpg') }}"
-                                    srcset="/img/photos/pd10@2x.jpg 2x" alt="" /><a class="item-link"
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd10.jpg') }}" alt="" /><a class="item-link"
                                     href="/img/photos/pd10-full.jpg" data-glightbox data-gallery="projects-group"><i
                                         class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
-                                    <h2 class="post-title h3"><a href="./single-project.html" class="link-dark">Inceptos
+                                    <h2 class="post-title h3"><a href="#" class="link-dark">Inceptos
                                             Euismod Egestas</a></h2>
                                     <div class="post-category text-ash">Stationary, Branding</div>
                                 </div>
@@ -514,14 +498,13 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd11.jpg') }}"
-                                    srcset="/img/photos/pd11@2x.jpg 2x" alt="" /><a class="item-link"
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd11.jpg') }}" alt="" /><a class="item-link"
                                     href="/img/photos/pd11-full.jpg" data-glightbox data-gallery="projects-group"><i
                                         class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
-                                    <h2 class="post-title h3"><a href="./single-project2.html" class="link-dark">Ipsum
+                                    <h2 class="post-title h3"><a href="#" class="link-dark">Ipsum
                                             Mollis Vulputate</a></h2>
                                     <div class="post-category text-ash">Packaging</div>
                                 </div>
@@ -531,14 +514,13 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}"
-                                    srcset="/img/photos/pd12@2x.jpg 2x" alt="" /><a class="item-link"
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}" alt="" /><a class="item-link"
                                     href="/img/photos/pd12-full.jpg" data-glightbox data-gallery="projects-group"><i
                                         class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
-                                    <h2 class="post-title h3"><a href="./single-project3.html" class="link-dark">Porta
+                                    <h2 class="post-title h3"><a href="#" class="link-dark">Porta
                                             Ornare Cras</a></h2>
                                     <div class="post-category text-ash">Branding</div>
                                 </div>

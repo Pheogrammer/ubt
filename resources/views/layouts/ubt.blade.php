@@ -26,7 +26,7 @@
                     class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark px-md-10 px-xxl-0">
                     <div class="container flex-lg-row flex-nowrap align-items-center">
                         <div class="navbar-brand w-100">
-                            <a href="./index.html">
+                            <a href="/">
                                 <img class="logo-dark" src="{{ asset('/ubt.png') }}" height="40px" alt="" />
                                 <img class="logo-light" src="{{ asset('/ubt.png') }}" height="40px" alt="" />
                             </a>
@@ -175,8 +175,7 @@
                         <div class="row gy-6 gy-lg-0">
                             <div class="col-md-4 col-lg-3">
                                 <div class="widget">
-                                    <img class="mb-4" src="{{ asset('/img/logo-light.png') }}"
-                                        srcset="/img/logo-light@2x.png 2x" alt="" />
+                                    <img class="mb-4" src="{{ asset('/img/logo-light.png') }}" alt="" />
                                     <p class="mb-4">© 2023 UBT. <br class="d-none d-lg-block" />All rights
                                         reserved.</p>
                                     <nav class="nav social social-white">
