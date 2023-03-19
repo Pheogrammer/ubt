@@ -1,18 +1,16 @@
 @extends('layouts.welcome')
 
 @section('content')
-    <section class="section-frame br-fix overflow-hidden">
+    <section class="section-frame br-fix overflow-hidden" id="home">
         <div class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
             data-image-src="{{ asset('/img/photos/bg26.jpg') }}">
             <div class="container pt-18 pt-lg-21 pb-17 pb-lg-19 text-center">
                 <div class="row">
                     <div class="col-md-9 col-lg-8 col-xl-7 col-xxl-6 mx-auto" data-cues="zoomIn" data-group="page-title"
                         data-interval="-200" data-delay="500">
-                        <h2 class="h6 text-uppercase ls-xl text-white mb-5">Hello! We are Sandbox</h2>
-                        <h3 class="display-1 fs-54 text-white mb-7">Grow your business with our marketing
-                            solutions</h3>
-                        <a href="" class="btn btn-circle btn-white btn-play ripple mx-auto"
-                            data-glightbox></a>
+                        <h2 class="h6 text-uppercase ls-xl text-white mb-5">Hello! We are Uswazi Born Talent</h2>
+                        <h3 class="display-1 fs-54 text-white mb-7">Here is Where the street talent meets the world</h3>
+                        <a href="" class="btn btn-circle btn-white btn-play ripple mx-auto" data-glightbox></a>
                     </div>
                     <!-- /column -->
                 </div>
@@ -31,88 +29,48 @@
         <!-- /.wrapper -->
     </section>
     <!--/section -->
-    <section class="wrapper bg-light">
-        <div class="container pt-14 pt-md-16 pb-15 pb-md-17">
-            <div class="row text-center">
-                <div class="col-lg-9 col-xl-8 mx-auto">
-                    <h2 class="fs-16 text-uppercase text-muted mb-3">What We Do?</h2>
-                    <h3 class="display-4 mb-10 px-xxl-10">The full service we are offering is specifically
-                        designed to meet your needs.</h3>
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-xxl-11 mx-auto">
-                    <div class="row gx-lg-8 gx-xl-12 gy-11 text-center d-flex align-items-end">
-                        <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
-                            <div class="px-md-3 px-lg-0 px-xl-3">
-                                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5"> <i
-                                        class="fa fa-monitor"></i> </div>
-                                <h3 class="fs-22">Web Design</h3>
-                                <p class="mb-2">Nulla vitae elit libero, a pharetra augue. Donec id elit non
-                                    mi porta gravida at eget. Fusce dapibus tellus.</p>
-                                <a href="#" class="more hover link-purple">Learn More</a>
-                            </div>
-                            <!--/.px -->
+    <section class="wrapper bg-light angled upper-end lower-end" id="who-are-we">
+        <div class="container py-14 py-md-16">
+            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-14 mb-md-17 align-items-center">
+                <div class="col-lg-6 position-relative order-lg-2">
+                    <div class="shape bg-dot primary rellax w-16 h-20" data-rellax-speed="1"
+                        style="top: 3rem; left: 5.5rem"></div>
+                    <div class="overlap-grid overlap-grid-2">
+                        <div class="item">
+                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/sing.jpg') }}"
+                                    srcset="{{ asset('/img/photos/about2@2x.jpg') }} 2x" alt=""></figure>
                         </div>
-                        <!--/column -->
-                        <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
-                            <div class="px-md-3 px-lg-0 px-xl-3">
-                                <div class="icon btn btn-block btn-lg btn-soft-leaf pe-none mb-5"> <i
-                                        class="fa fa-swatchbook"></i> </div>
-                                <h3 class="fs-22">Graphic Design</h3>
-                                <p class="mb-2">Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel
-                                    augue laoreet. Sed posuere consectetur.</p>
-                                <a href="#" class="more hover link-leaf">Learn More</a>
-                            </div>
-                            <!--/.px -->
+                        <div class="item">
+                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/shoutout.jpg') }}"
+                                    srcset="{{ asset('/img/photos/about3@2x.jpg') }} 2x" alt=""></figure>
                         </div>
-                        <!--/column -->
-                        <div class="col-sm-8 col-md-6 col-lg-4 mx-auto">
-                            <div class="px-md-3 px-lg-0 px-xl-3">
-                                <div class="icon btn btn-block btn-lg btn-soft-pink pe-none mb-5"> <i
-                                        class="fa fa-presentation-play"></i> </div>
-                                <h3 class="fs-22">3D Animation</h3>
-                                <p class="mb-2">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                                    Praesent commodo cursus magna scelerisque.</p>
-                                <a href="#" class="more hover link-pink">Learn More</a>
-                            </div>
-                            <!--/.px -->
-                        </div>
-                        <!--/column -->
                     </div>
-                    <!--/.row -->
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <hr class="dark my-14 my-md-17" />
-            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-15 mb-md-17 align-items-center">
-                <div class="col-lg-7">
-                    <figure><img class="w-auto" src="{{ asset('/img/illustrations/i9.png') }}"
-                            srcset="/img/illustrations/i9@2x.png 2x" alt="" /></figure>
                 </div>
                 <!--/column -->
-                <div class="col-lg-5">
-                    <h3 class="fs-16 text-uppercase text-muted mb-3">How It Works?</h3>
-                    <h3 class="display-4 mb-6">Find out everything about creating a business model.</h3>
-                    <div class="row gy-4">
-                        <div class="col-md-6">
-                            <h4><span class="text-primary">1.</span> Creative Ideas</h4>
-                            <p class="mb-0">Nulla vitae elit libero a augue donec id elit non mi porta.</p>
+                <div class="col-lg-6">
+                    <img src="{{ asset('/img/icons/lineal/megaphone.svg') }}" class="svg-inject icon-svg icon-svg-md mb-4"
+                        alt="" />
+                    <h2 class="display-4 mb-3">Who Are We?</h2>
+                    <p class="lead fs-lg">Uswazi Born Talent is a non-governmental organization founded as a platform that
+                        would help unearth, nurture and develop young
+                        talent from the street as a way to preserve and promote our culture and the heritage of our
+                        ancestors through the arts</p>
+                    <p class="mb-6">The aim is to use Tanzanian creativity to protect, preserve and promote our culture as
+                        Tanzanians for the benefit of future generations.</p>
+                    <div class="row gy-3 gx-xl-8">
+                        <div class="col-xl-6">
+                            <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                                <li><span><i class="uil uil-check"></i></span><span>Music.</span></li>
+                                <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Dancing.</span></li>
+                            </ul>
                         </div>
-                        <div class="col-md-6">
-                            <h4><span class="text-primary">2.</span> Magic Touch</h4>
-                            <p class="mb-0">Nulla vitae elit libero a augue donec id elit non mi porta.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4><span class="text-primary">3.</span> Data Analysis</h4>
-                            <p class="mb-0">Nulla vitae elit libero a augue donec id elit non mi porta.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <h4><span class="text-primary">4.</span> Finalize Product</h4>
-                            <p class="mb-0">Nulla vitae elit libero a augue donec id elit non mi porta.</p>
+                        <!--/column -->
+                        <div class="col-xl-6">
+                            <ul class="icon-list bullet-bg bullet-soft-primary mb-0">
+                                <li><span><i class="uil uil-check"></i></span><span>Drama.</span></li>
+                                <li class="mt-3"><span><i class="uil uil-check"></i></span><span>Performing arts.</span>
+                                </li>
+                            </ul>
                         </div>
                         <!--/column -->
                     </div>
@@ -121,73 +79,149 @@
                 <!--/column -->
             </div>
             <!--/.row -->
-            <div class="row gx-lg-8 gx-xl-12 gy-10">
-                <div class="col-lg-7 order-lg-2">
-                    <figure><img class="w-auto" src="{{ asset('/img/illustrations/i12.png') }}"
-                            srcset="/img/illustrations/i12@2x.png 2x" alt="" /></figure>
+            <div class="row mb-5">
+                <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
+                    <img src="{{ asset('/img/icons/lineal/list.svg') }}" class="svg-inject icon-svg icon-svg-md mb-4"
+                        alt="" />
+                    <h2 class="display-4 mb-4 px-lg-14">Our Success Story</h2>
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="card me-lg-6">
+                        <div class="card-body p-6">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span
+                                            class="number">01</span></span>
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">Singeli Stars</h4>
+                                    <p class="mb-0">MAN FONGO, MSAGA SUMU, TAMIMU, DULLA MAKABILA etc</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                    <div class="card ms-lg-13 mt-6">
+                        <div class="card-body p-6">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span
+                                            class="number">02</span></span>
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">Producers</h4>
+                                    <p class="mb-0">Producer Kenny Touchez, Producer Good MASTER, etc</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                    <div class="card mx-lg-6 mt-6">
+                        <div class="card-body p-6">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <span class="icon btn btn-circle btn-lg btn-soft-primary pe-none me-4"><span
+                                            class="number">03</span></span>
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">Managers</h4>
+                                    <p class="mb-0">Manager ISSA, Manager PAUL NELLY etc .</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.card-body -->
+                    </div>
+                    <!--/.card -->
+                </div>
+                <!--/column -->
+                <div class="col-lg-6">
+                    <p class="lead fs-lg pe-lg-5">UBT has succeeded in supporting many local artists who today some have
+                        succeeded and live through their art</p>
+                    <p>Some of the artists mentioned include Mimah, also known as Malkia wa Singeli, producer Kenny Touchez,
+                        Fire Girls (Wamoto), Waswahili Band, Mike Song, Kerry, So Real, Good Master (producer), Dotizo, and
+                        managers Issa and Paul Nelly. <br><br>
+                        The list includes Dulla Makabila, Easy Man, Tamimu, DJs
+                        Kidogodogo and Kwaro, Msaga Sumu, Makuzi Comedian, Snika Daddy Comedian, Wamwiduka Band, Ellis
+                        Manager, Anjella, Comedian Pusi, Man Fongo, DJ Msolopa, Vairas Mdudu, Vee Artist, K Mziwanda, Kisa
+                        Baby, and many more.</p>
+
+                    <a href="#" class="btn btn-primary rounded-pill mb-0">&nbsp;</a>
+                </div>
+                <!--/column -->
+            </div>
+            <!--/.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <section class="wrapper bg-light">
+        <div class="container pt-14 pt-md-16 pb-15 pb-md-17">
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-xxl-11 mx-auto">
+                    <div class="row gx-lg-8 gx-xl-12 gy-11 text-center d-flex align-items-end">
+                        <div class="col-sm col-md col-lg mx-auto">
+                            <div class="px-md-3 px-lg-0 px-xl-3">
+                                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5"> <i class="fa fa-map"
+                                        aria-hidden="true"></i> </div>
+                                <h3 class="fs-22">Mission</h3>
+                                <p class="mb-2">Our mission is to provide a well-organized, coordinated, and resourceful
+                                    cultural and arts center of excellence that focuses on nurturing the creativity of young
+                                    people in Tanzania mainland.</p>
+                            </div>
+                            <!--/.px -->
+                        </div>
+                        <!--/column -->
+                        <div class="col-sm col-md col-lg mx-auto">
+                            <div class="px-md-3 px-lg-0 px-xl-3">
+                                <div class="icon btn btn-block btn-lg btn-soft-leaf pe-none mb-5"> <i
+                                        class="fa fa-binoculars" aria-hidden="true"></i> </div>
+                                <h3 class="fs-22">Vision</h3>
+                                <p class="mb-2">Our aim is to establish a center of excellence in culture and arts that
+                                    will serve as an outstanding creative hub, dedicated to discovering, nurturing, and
+                                    developing young talent from the streets.</p>
+                            </div>
+                            <!--/.px -->
+                        </div>
+
+                        <!--/column -->
+                    </div>
+                    <!--/.row -->
+                </div>
+                <!-- /column -->
+            </div>
+            <!-- /.row -->
+            <hr class="dark my-14 my-md-17" />
+            <div class="row gx-lg-8 gx-xl-12 gy-10 mb-15 mb-md-12 align-items-center">
+                <div class="col-lg-7">
+                    <figure><img class="w-auto" src="{{ asset('/img/illustrations/i9.png') }}"
+                            srcset="/img/illustrations/i9@2x.png 2x" alt="" /></figure>
                 </div>
                 <!--/column -->
                 <div class="col-lg-5">
-                    <h3 class="fs-16 text-uppercase text-muted mt-xxl-8 mb-3">Why Choose Us?</h3>
-                    <h3 class="display-4 mb-6">We bring solutions to make life easier for our clients.</h3>
-                    <div class="accordion accordion-wrapper" id="accordionExample">
-                        <div class="card plain accordion-item">
-                            <div class="card-header" id="headingOne">
-                                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne"> Professional Design </button>
-                            </div>
-                            <!--/.card-header -->
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                                        ut fermentum massa justo sit amet risus. Cras mattis consectetur purus
-                                        sit amet fermentum. Praesent commodo cursus magna, vel.</p>
-                                </div>
-                                <!--/.card-body -->
-                            </div>
-                            <!--/.accordion-collapse -->
+                    <h3 class="fs-16 text-uppercase text-muted mb-3"></h3>
+                    <h3 class="display-4 mb-6">Our Objectives</h3>
+                    <div class="row gy-4">
+                        <div class="col-md-12">
+                            <h4><span class="text-primary">1.</span> Youth Empowerment</h4>
+                            <p class="mb-0">Create and promote safe spaces for unleashing youth talents and innovative potentials that are cultural relevant.</p>
                         </div>
-                        <!--/.accordion-item -->
-                        <div class="card plain accordion-item">
-                            <div class="card-header" id="headingTwo">
-                                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo"> Top-Notch Support </button>
-                            </div>
-                            <!--/.card-header -->
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                                        ut fermentum massa justo sit amet risus. Cras mattis consectetur purus
-                                        sit amet fermentum. Praesent commodo cursus magna, vel.</p>
-                                </div>
-                                <!--/.card-body -->
-                            </div>
-                            <!--/.accordion-collapse -->
+                        <div class="col-md-12">
+                            <h4><span class="text-primary">2.</span> Youth Activism</h4>
+                            <p class="mb-0">Empower youth creativity and cultural activism among youth, to use their talents for influencing positive behavior, attitudes, and social change.</p>
                         </div>
-                        <!--/.accordion-item -->
-                        <div class="card plain accordion-item">
-                            <div class="card-header" id="headingThree">
-                                <button class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree"> Header and Slider Options
-                                </button>
-                            </div>
-                            <!--/.card-header -->
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="card-body">
-                                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                                        ut fermentum massa justo sit amet risus. Cras mattis consectetur purus
-                                        sit amet fermentum. Praesent commodo cursus magna, vel.</p>
-                                </div>
-                                <!--/.card-body -->
-                            </div>
-                            <!--/.accordion-collapse -->
+                        <div class="col-md-12">
+                            <h4><span class="text-primary">3.</span> Cultural Heritage Awareness</h4>
+                            <p class="mb-0">Raising awareness on the usefulness of arts and talents to foster/promote the identity of the country's cultural heritage such as our tradition/tribal cultures, cultural heritage sites and tourist attractions.</p>
                         </div>
-                        <!--/.accordion-item -->
+                        <!--/column -->
                     </div>
-                    <!--/.accordion -->
+                    <!--/.row -->
                 </div>
                 <!--/column -->
             </div>
@@ -363,200 +397,6 @@
                 </div>
                 <!-- /.swiper -->
             </div>
-            <!-- /.swiper-container -->
-            <hr class="dark my-14 my-md-17" />
-            <div class="row text-center">
-                <div class="col-md-11 col-lg-9 col-xl-8 mx-auto">
-                    <h2 class="fs-16 text-uppercase text-muted mb-3">Our Pricing</h2>
-                    <h3 class="display-4 mb-10 px-xxl-10">We offer great prices, premium products and quality
-                        service for your business.</h3>
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-xl-11 mx-auto">
-                    <div class="pricing-wrapper mb-10 mb-md-14">
-                        <div class="pricing-switcher-wrapper switcher">
-                            <p class="mb-0 pe-3">Monthly</p>
-                            <div class="pricing-switchers">
-                                <div class="pricing-switcher pricing-switcher-active"></div>
-                                <div class="pricing-switcher"></div>
-                                <div class="switcher-button bg-primary"></div>
-                            </div>
-                            <p class="mb-0 ps-3">Yearly</p>
-                        </div>
-                        <div class="row gy-6 mt-3 mt-md-5">
-                            <div class="col-md-6 col-lg-4">
-                                <div class="pricing card shadow-lg">
-                                    <div class="card-body">
-                                        <div class="prices text-dark">
-                                            <div class="price price-show justify-content-start"><span
-                                                    class="price-currency">$</span><span class="price-value">9</span>
-                                                <span class="price-duration">mo</span></div>
-                                            <div class="price price-hide price-hidden justify-content-start">
-                                                <span class="price-currency">$</span><span class="price-value">99</span>
-                                                <span class="price-duration">yr</span>
-                                            </div>
-                                        </div>
-                                        <!--/.prices -->
-                                        <h4 class="card-title mt-2">Basic Plan</h4>
-                                        <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
-                                            <li><i class="fa fa-check"></i><span><strong>1</strong> Project
-                                                </span></li>
-                                            <li><i class="fa fa-check"></i><span><strong>100K</strong> API
-                                                    Access </span></li>
-                                            <li><i class="fa fa-check"></i><span><strong>100MB</strong>
-                                                    Storage </span></li>
-                                            <li><i class="fa fa-check"></i><span> Weekly
-                                                    <strong>Reports</strong> </span></li>
-                                            <li><i class="fa fa-check"></i><span> 7/24
-                                                    <strong>Support</strong></span></li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary rounded">Choose Plan</a>
-                                    </div>
-                                    <!--/.card-body -->
-                                </div>
-                                <!--/.pricing -->
-                            </div>
-                            <!--/column -->
-                            <div class="col-md-6 col-lg-4 popular">
-                                <div class="pricing card shadow-lg">
-                                    <div class="card-body">
-                                        <div class="prices text-dark">
-                                            <div class="price price-show justify-content-start"><span
-                                                    class="price-currency">$</span><span class="price-value">19</span>
-                                                <span class="price-duration">mo</span></div>
-                                            <div class="price price-hide price-hidden justify-content-start">
-                                                <span class="price-currency">$</span><span class="price-value">199</span>
-                                                <span class="price-duration">yr</span>
-                                            </div>
-                                        </div>
-                                        <!--/.prices -->
-                                        <h4 class="card-title mt-2">Premium Plan</h4>
-                                        <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
-                                            <li><i class="fa fa-check"></i><span><strong>5</strong> Projects
-                                                </span></li>
-                                            <li><i class="fa fa-check"></i><span><strong>100K</strong> API
-                                                    Access </span></li>
-                                            <li><i class="fa fa-check"></i><span><strong>200MB</strong>
-                                                    Storage </span></li>
-                                            <li><i class="fa fa-check"></i><span> Weekly
-                                                    <strong>Reports</strong></span></li>
-                                            <li><i class="fa fa-check"></i><span> 7/24
-                                                    <strong>Support</strong></span></li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary rounded">Choose Plan</a>
-                                    </div>
-                                    <!--/.card-body -->
-                                </div>
-                                <!--/.pricing -->
-                            </div>
-                            <!--/column -->
-                            <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-0">
-                                <div class="pricing card shadow-lg">
-                                    <div class="card-body">
-                                        <div class="prices text-dark">
-                                            <div class="price price-show justify-content-start"><span
-                                                    class="price-currency">$</span><span class="price-value">49</span>
-                                                <span class="price-duration">mo</span></div>
-                                            <div class="price price-hide price-hidden justify-content-start">
-                                                <span class="price-currency">$</span><span class="price-value">499</span>
-                                                <span class="price-duration">yr</span>
-                                            </div>
-                                        </div>
-                                        <!--/.prices -->
-                                        <h4 class="card-title mt-2">Corporate Plan</h4>
-                                        <ul class="icon-list bullet-bg bullet-soft-primary mt-7 mb-8 text-start">
-                                            <li><i class="fa fa-check"></i><span><strong>20</strong>
-                                                    Projects </span></li>
-                                            <li><i class="fa fa-check"></i><span><strong>300K</strong> API
-                                                    Access </span></li>
-                                            <li><i class="fa fa-check"></i><span><strong>500MB</strong>
-                                                    Storage </span></li>
-                                            <li><i class="fa fa-check"></i><span> Weekly
-                                                    <strong>Reports</strong></span></li>
-                                            <li><i class="fa fa-check"></i><span> 7/24
-                                                    <strong>Support</strong></span></li>
-                                        </ul>
-                                        <a href="#" class="btn btn-primary rounded">Choose Plan</a>
-                                    </div>
-                                    <!--/.card-body -->
-                                </div>
-                                <!--/.pricing -->
-                            </div>
-                            <!--/column -->
-                        </div>
-                        <!--/.row -->
-                    </div>
-                    <!--/.pricing-wrapper -->
-                    <div class="row gx-md-8 gx-xl-12 gy-10 mb-15">
-                        <div class="col-lg-6">
-                            <div class="d-flex flex-row">
-                                <div>
-                                    <span class="icon btn btn-sm btn-circle btn-primary pe-none me-5"><i
-                                            class="fa fa-comment-exclamation"></i></span>
-                                </div>
-                                <div>
-                                    <h4>Can I cancel my subscription?</h4>
-                                    <p class="mb-0">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                                        sem malesuada magna mollis euismod maecenas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /column -->
-                        <div class="col-lg-6">
-                            <div class="d-flex flex-row">
-                                <div>
-                                    <span class="icon btn btn-sm btn-circle btn-primary pe-none me-5"><i
-                                            class="fa fa-comment-exclamation"></i></span>
-                                </div>
-                                <div>
-                                    <h4>Which payment methods do you accept?</h4>
-                                    <p class="mb-0">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                                        sem malesuada magna mollis euismod maecenas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /column -->
-                        <div class="col-lg-6">
-                            <div class="d-flex flex-row">
-                                <div>
-                                    <span class="icon btn btn-sm btn-circle btn-primary pe-none me-5"><i
-                                            class="fa fa-comment-exclamation"></i></span>
-                                </div>
-                                <div>
-                                    <h4>How can I manage my Account?</h4>
-                                    <p class="mb-0">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                                        sem malesuada magna mollis euismod maecenas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /column -->
-                        <div class="col-lg-6">
-                            <div class="d-flex flex-row">
-                                <div>
-                                    <span class="icon btn btn-sm btn-circle btn-primary pe-none me-5"><i
-                                            class="fa fa-comment-exclamation"></i></span>
-                                </div>
-                                <div>
-                                    <h4>Is my credit card information secure?</h4>
-                                    <p class="mb-0">Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                                        condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta
-                                        sem malesuada magna mollis euismod maecenas.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /column -->
-                    </div>
-                    <!-- /.row -->
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
         </div>
         <!-- /.container -->
     </section>

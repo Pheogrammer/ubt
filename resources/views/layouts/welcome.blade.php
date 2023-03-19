@@ -40,11 +40,11 @@
                             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                                 <ul class="navbar-nav">
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="#">Home</a>
+                                        <a class="nav-link" href="#home">Home</a>
                                         <!--/.dropdown-menu -->
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="#">About Us</a>
+                                        <a class="nav-link " href="#who-are-we">About Us</a>
                                     </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#"
@@ -227,11 +227,11 @@
                                 <div class="widget">
                                     <h4 class="widget-title text-white mb-3">Learn More</h4>
                                     <ul class="list-unstyled  mb-0">
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Story</a></li>
+                                        <li><a href="#home">Home</a></li>
+                                        <li><a href="#who-are-we">About Us</a></li>
                                         <li><a href="#">Projects</a></li>
-                                        <li><a href="#">Terms of Use</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact Us</a></li>
                                     </ul>
                                 </div>
                                 <!-- /.widget -->
