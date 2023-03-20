@@ -61,7 +61,7 @@
                                     <div>
                                         <a href="" class="link-inverse"><span
                                                 class="__cf_email__">[email&#160;protected]</span></a>
-                                        <br /> 00 (123) 456 78 90 <br />
+                                        <br /> 000 000 000 0 <br />
                                         <nav class="nav social social-white mt-4">
                                             <a href="#">
                                                 <i class="fab fa-twitter    "></i>
@@ -109,20 +109,19 @@
                         <!-- /.widget -->
                         <div class="widget mb-8">
                             <h4 class="widget-title text-white mb-3">Contact Info</h4>
-                            <address> Moonshine St. 14/05 <br /> Light City, London </address>
-                            <a href="/cdn-cgi/l/email-protection#9dfbf4efeee9b3f1fceee9ddf8f0fcf4f1b3fef2f0"><span
-                                    class="__cf_email__"
-                                    data-cfemail="771e19111837121a161e1b5914181a">[email&#160;protected]</span></a><br />
-                            00 (123) 456 78 90
+                            <address> Adress </address>
+                            <a href="/cdn-cgi/l/email-protection#9dfbf4efeee9b3f1fceee9ddf8f0fcf4f1b3fef2f0">Email</a><br />
+                            000 000 000 0
                         </div>
                         <!-- /.widget -->
                         <div class="widget mb-8">
                             <h4 class="widget-title text-white mb-3">Learn More</h4>
                             <ul class="list-unstyled">
-                                <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Terms of Use</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/#home">Home</a></li>
+                                <li><a href="/#who-are-we">About Us</a></li>
+                                <li><a href="projects">Projects</a></li>
+                                <li><a href="blog">Blog</a></li>
+                                <li><a href="contact">Contact Us</a></li>
                             </ul>
                         </div>
                         <!-- /.widget -->
@@ -175,7 +174,7 @@
                         <div class="row gy-6 gy-lg-0">
                             <div class="col-md-4 col-lg-3">
                                 <div class="widget">
-                                    <img class="mb-4" src="{{ asset('/img/logo-light.png') }}" alt="" />
+                                    <img class="mb-4" src="{{ asset('/ubt.png') }}" height="100px" alt="" />
                                     <p class="mb-4">© 2023 UBT. <br class="d-none d-lg-block" />All rights
                                         reserved.</p>
                                     <nav class="nav social social-white">
@@ -194,11 +193,9 @@
                             <div class="col-md-4 col-lg-3">
                                 <div class="widget">
                                     <h4 class="widget-title text-white mb-3">Get in Touch</h4>
-                                    <address class="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United
-                                        Kingdom</address>
-                                    <a href="/cdn-cgi/l/email-protection#b596"><span class="__cf_email__"
-                                            data-cfemail="51383f373e11343c30383d7f323e3c">[email&#160;protected]</span></a><br />
-                                    00 (123) 456 78 90
+                                    <address class="pe-xl-15 pe-xxl-17">Our Adress</address>
+                                    <a href="/cdn-cgi/l/email-protection#b596">email@email.com</a><br />
+                                    000 000 000 0
                                 </div>
                                 <!-- /.widget -->
                             </div>

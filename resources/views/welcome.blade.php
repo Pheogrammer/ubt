@@ -37,10 +37,12 @@
                         style="top: 3rem; left: 5.5rem"></div>
                     <div class="overlap-grid overlap-grid-2">
                         <div class="item">
-                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/sing.jpg') }}" alt=""></figure>
+                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/sing.jpg') }}" alt="">
+                            </figure>
                         </div>
                         <div class="item">
-                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/shoutout.jpg') }}" alt=""></figure>
+                            <figure class="rounded shadow"><img src="{{ asset('/img/photos/shoutout.jpg') }}"
+                                    alt=""></figure>
                         </div>
                     </div>
                 </div>
@@ -237,7 +239,7 @@
             <div class="container py-17">
                 <div class="row text-center">
                     <div class="col-xl-11 col-xxl-10 mx-auto">
-                        <h2 class="fs-16 text-uppercase text-muted mb-3">Company Facts</h2>
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Organization Facts</h2>
                         <h3 class="display-4 mb-10 px-lg-20 px-xl-20">Save your time and money by choosing our
                             professional team.</h3>
                         <div class="row gy-6 text-center">
@@ -298,7 +300,8 @@
                         <div class="swiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t1.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t1.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Masudi Bashiri Kandoro</h4>
                                     <div class="meta mb-2">Managing Director</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -310,7 +313,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t2.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t2.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Nguza A Kinonda</h4>
                                     <div class="meta mb-2">Finance Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -322,7 +326,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t3.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t3.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Emmanuel Mabodo</h4>
                                     <div class="meta mb-2">Project Coordinato</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -334,7 +339,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t4.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t4.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Dimar Adolph</h4>
                                     <div class="meta mb-2">Program and Performing Arts Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -346,7 +352,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Issa Bakari</h4>
                                     <div class="meta mb-2"> Assistant Program and Performing Arts Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -358,7 +365,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Suleiman Hassan</h4>
                                     <div class="meta mb-2"> Graphic Designer and Social Media Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -370,7 +378,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Glory Michael Nyangusi</h4>
                                     <div class="meta mb-2"> Administrator and Community Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -382,7 +391,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Goodluck Mwakasungura</h4>
                                     <div class="meta mb-2"> Production Manager</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -394,7 +404,8 @@
                                 </div>
                                 <!--/.swiper-slide -->
                                 <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg" alt="" />
+                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
+                                        alt="" />
                                     <h4 class="mb-1">Jacob Mulikuza</h4>
                                     <div class="meta mb-2"> Project Consultant</div>
                                     <nav class="nav social justify-content-center text-center mb-0">
@@ -423,8 +434,8 @@
             <div class="row">
                 <div class="col-lg-10 col-xl-8 mx-auto text-center">
                     <h2 class="fs-16 text-uppercase text-muted mb-3">Latest Projects</h2>
-                    <h3 class="display-4 mb-10 px-xxl-10">Check out some of our awesome projects with creative
-                        ideas and great design.</h3>
+                    <h3 class="display-4 mb-10 px-xxl-10">Explore our impressive portfolio of artistic projects featuring
+                        innovative concepts and exceptional talents</h3>
                 </div>
                 <!-- /column -->
             </div>
@@ -434,9 +445,9 @@
                 <div class="swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd7.jpg') }}" alt="" /><a class="item-link"
-                                    href="/img/photos/pd7-full.jpg" data-glightbox data-gallery="projects-group"><i
-                                        class="fa fa-focus-add"></i></a>
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd7.jpg') }}"
+                                    alt="" /><a class="item-link" href="/img/photos/pd7-full.jpg" data-glightbox
+                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
@@ -450,9 +461,9 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd8.jpg') }}" alt="" /><a class="item-link"
-                                    href="/img/photos/pd8-full.jpg" data-glightbox data-gallery="projects-group"><i
-                                        class="fa fa-focus-add"></i></a>
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd8.jpg') }}"
+                                    alt="" /><a class="item-link" href="/img/photos/pd8-full.jpg" data-glightbox
+                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
@@ -466,9 +477,9 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd9.jpg') }}" alt="" /><a class="item-link"
-                                    href="/img/photos/pd9-full.jpg" data-glightbox data-gallery="projects-group"><i
-                                        class="fa fa-focus-add"></i></a>
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd9.jpg') }}"
+                                    alt="" /><a class="item-link" href="/img/photos/pd9-full.jpg" data-glightbox
+                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
@@ -482,9 +493,9 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd10.jpg') }}" alt="" /><a class="item-link"
-                                    href="/img/photos/pd10-full.jpg" data-glightbox data-gallery="projects-group"><i
-                                        class="fa fa-focus-add"></i></a>
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd10.jpg') }}"
+                                    alt="" /><a class="item-link" href="/img/photos/pd10-full.jpg" data-glightbox
+                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
@@ -498,9 +509,9 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd11.jpg') }}" alt="" /><a class="item-link"
-                                    href="/img/photos/pd11-full.jpg" data-glightbox data-gallery="projects-group"><i
-                                        class="fa fa-focus-add"></i></a>
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd11.jpg') }}"
+                                    alt="" /><a class="item-link" href="/img/photos/pd11-full.jpg" data-glightbox
+                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
@@ -514,9 +525,9 @@
                         </div>
                         <!--/.swiper-slide -->
                         <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}" alt="" /><a class="item-link"
-                                    href="/img/photos/pd12-full.jpg" data-glightbox data-gallery="projects-group"><i
-                                        class="fa fa-focus-add"></i></a>
+                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}"
+                                    alt="" /><a class="item-link" href="/img/photos/pd12-full.jpg" data-glightbox
+                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
                             </figure>
                             <div class="project-details d-flex justify-content-center flex-column">
                                 <div class="post-header">
