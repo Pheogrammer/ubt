@@ -1,5 +1,7 @@
 @extends('layouts.ubt')
-
+@section('title')
+    Blog
+@endsection
 @section('content')
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
         data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
@@ -60,7 +62,8 @@
                                                     Sandbox</span></a></li>
                                         <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span>
                                                     Comments</span></a></li>
-                                        <li class="post-likes ms-auto"><a href="readblog" style="color: #6b0304;">Read More</a></li>
+                                        <li class="post-likes ms-auto"><a href="readblog" style="color: #6b0304;">Read
+                                                More</a></li>
                                     </ul>
                                     <!-- /.post-meta -->
                                 </div>

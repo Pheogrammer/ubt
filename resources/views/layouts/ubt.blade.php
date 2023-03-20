@@ -8,7 +8,7 @@
         content="a platform that would help unearth, nurture and develop young talent from the street as a way   to preserve and promote our culture and the heritage of our ancestors through the arts.">
     <meta name="keywords" content="">
     <meta name="author" content="elemis">
-    <title>Uswazi Born Talent</title>
+    <title>Uswazi Born Talent - @yield('title')</title>
     <link rel="shortcut icon" href="{{ asset('/ubt.png') }}">
     <link rel="stylesheet" href="{{ asset('/css/plugins.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
@@ -82,7 +82,40 @@
                         <div class="navbar-other w-100 d-flex ms-auto">
                             <ul class="navbar-nav flex-row align-items-center ms-auto">
                                 <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas"
-                                        data-bs-target="#offcanvas-info"><i class="fa fa-info-circle"></i></a></li>
+                                        data-bs-target="#offcanvas-info">
+                                        <i class="fa fa-info-circle"></i>
+                                    </a>
+                                </li>
+                                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                @guest
+                                    @if (Route::has('login'))
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{{ route('login') }}"> <i
+                                                    class="fas fa-door-open    "></i> {{ __('Login') }}</a>
+                                        </li>
+                                    @endif
+                                @else
+                                    <li class="nav-item dropdown">
+                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                            v-pre>
+                                            <i class="fa fa-user-circle" aria-hidden="true"></i> {{ Auth::user()->name }}
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                            </a>
+
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                class="d-none">
+                                                @csrf
+                                            </form>
+                                        </div>
+                                    </li>
+                                @endguest
 
                                 <li class="nav-item d-lg-none">
                                     <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -104,13 +137,16 @@
                     </div>
                     <div class="offcanvas-body pb-6">
                         <div class="widget mb-8">
-                            <p>a platform that helps to unearth, nurture and develop young talent from the street as a way   to preserve and promote our culture and the heritage of our ancestors through the arts.</p>
+                            <p>a platform that helps to unearth, nurture and develop young talent from the street as a
+                                way to preserve and promote our culture and the heritage of our ancestors through the
+                                arts.</p>
                         </div>
                         <!-- /.widget -->
                         <div class="widget mb-8">
                             <h4 class="widget-title text-white mb-3">Contact Info</h4>
                             <address> Adress </address>
-                            <a href="/cdn-cgi/l/email-protection#9dfbf4efeee9b3f1fceee9ddf8f0fcf4f1b3fef2f0">Email</a><br />
+                            <a
+                                href="/cdn-cgi/l/email-protection#9dfbf4efeee9b3f1fceee9ddf8f0fcf4f1b3fef2f0">Email</a><br />
                             000 000 000 0
                         </div>
                         <!-- /.widget -->
@@ -143,12 +179,14 @@
                 <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
                     <div class="container d-flex flex-row py-6">
                         <form class="search-form w-100">
+                            @csrf
                             <input id="search-form" type="text" class="form-control"
                                 placeholder="Type keyword and hit enter">
+
+                            <!-- /.search-form -->
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </form>
-                        <!-- /.search-form -->
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
                     </div>
                     <!-- /.container -->
                 </div>
@@ -174,7 +212,8 @@
                         <div class="row gy-6 gy-lg-0">
                             <div class="col-md-4 col-lg-3">
                                 <div class="widget">
-                                    <img class="mb-4" src="{{ asset('/ubt.png') }}" height="100px" alt="" />
+                                    <img class="mb-4" src="{{ asset('/ubt.png') }}" height="100px"
+                                        alt="" />
                                     <p class="mb-4">© 2023 UBT. <br class="d-none d-lg-block" />All rights
                                         reserved.</p>
                                     <nav class="nav social social-white">
@@ -222,11 +261,10 @@
                                     <div class="newsletter-wrapper">
                                         <!-- Begin Mailchimp Signup Form -->
                                         <div id="mc_embed_signup2">
-                                            <form
-                                                action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
-                                                method="post" id="mc-embedded-subscribe-form2"
+                                            <form action="" method="post" id="mc-embedded-subscribe-form2"
                                                 name="mc-embedded-subscribe-form" class="validate dark-fields"
                                                 target="_blank" novalidate>
+                                                @csrf
                                                 <div id="mc_embed_signup_scroll2">
                                                     <div class="mc-field-group input-group form-floating">
                                                         <input type="email" value="" name="EMAIL"
@@ -272,7 +310,6 @@
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg>
         </div>
-        {{-- <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> --}}
         <script src="{{ asset('/js/plugins.js') }}"></script>
         <script src="{{ asset('/js/theme.js') }}"></script>
 </body>

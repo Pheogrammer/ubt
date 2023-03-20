@@ -1,5 +1,7 @@
 @extends('layouts.ubt')
-
+@section('title')
+    View Project
+@endsection
 @section('content')
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
         data-image-src="{{ asset('/img/photos/shoutout.jpg') }}">

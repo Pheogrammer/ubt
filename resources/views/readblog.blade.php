@@ -1,5 +1,7 @@
 @extends('layouts.ubt')
-
+@section('title')
+    Read Blog
+@endsection
 @section('content')
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
         data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
@@ -123,7 +125,6 @@
                                 <!-- /.classic-view -->
 
 
-                                <!-- /.comment-form -->
                             </div>
                             <!-- /.card-body -->
                         </div>

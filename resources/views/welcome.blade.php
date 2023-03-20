@@ -1,5 +1,7 @@
 @extends('layouts.ubt')
-
+@section('title')
+    Home
+@endsection
 @section('content')
     <section class="section-frame br-fix overflow-hidden" id="home">
         <div class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"

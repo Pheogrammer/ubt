@@ -1,5 +1,7 @@
 @extends('layouts.ubt')
-
+@section('title')
+    Contact Us
+@endsection
 @section('content')
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-400 text-white"
         data-image-src="/img/photos/5032.jpg">
@@ -46,8 +48,7 @@
                                         </div>
                                         <div class="align-self-start justify-content-start">
                                             <h5 class="mb-1">Address</h5>
-                                            <address>Moonshine St. 14/05 Light City, <br class="d-none d-md-block" />London,
-                                                United Kingdom</address>
+                                            <address>Adress <br class="d-none d-md-block" />Our City</address>
                                         </div>
                                     </div>
                                     <!--/div -->
@@ -58,7 +59,7 @@
                                         </div>
                                         <div>
                                             <h5 class="mb-1">Phone</h5>
-                                            <p>00 (123) 456 78 90 <br />00 (987) 654 32 10</p>
+                                            <p>000 000 000 0 <br />000 000 000 0</p>
                                         </div>
                                     </div>
                                     <!--/div -->
@@ -69,15 +70,9 @@
                                         </div>
                                         <div>
                                             <h5 class="mb-1">E-mail</h5>
-                                            <p class="mb-0"><a
-                                                    href="cdn-cgi/l/email-protection.html#0172606f65636e7941646c60686d2f626e6c"
-                                                    class="link-body"><span class="__cf_email__"
-                                                        data-cfemail="a4d7c5cac0c6cbdce4c1c9c5cdc88ac7cbc9">[email&#160;protected]</span></a>
+                                            <p class="mb-0"><a href="" class="link-body">Email 1</a>
                                             </p>
-                                            <p class="mb-0"><a
-                                                    href="cdn-cgi/l/email-protection.html#5d3538312d1d2e3c33393f3225733e3230"
-                                                    class="link-body"><span class="__cf_email__"
-                                                        data-cfemail="5038353c201023313e34323f287e333f3d">[email&#160;protected]</span></a>
+                                            <p class="mb-0"><a href="" class="link-body">Email 2</a>
                                             </p>
                                         </div>
                                     </div>
@@ -96,11 +91,11 @@
             <!-- /.row -->
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-                    <h2 class="display-4 mb-3 text-center">Drop Us a Line</h2>
+                    <h2 class="display-4 mb-3 text-center">Send us an email</h2>
                     <p class="lead text-center mb-10">Reach out to us from our contact form and we will get back to you
                         shortly.</p>
-                    <form class="contact-form needs-validation" method="post"
-                        action="https://sandbox.elemisthemes.com//php/contact.php" novalidate>
+                    <form class="contact-form needs-validation" method="post" action="" novalidate>
+                        @csrf
                         <div class="messages"></div>
                         <div class="row gx-4">
                             <div class="col-md-6">
