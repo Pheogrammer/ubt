@@ -1,5 +1,7 @@
 @extends('layouts.ubt')
-
+@section('title')
+    Login
+@endsection
 @section('content')
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
         data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
@@ -86,12 +88,6 @@
                                                                 {{ __('Login') }}
                                                             </button>
 
-                                                            @if (Route::has('password.request'))
-                                                                <a class="btn btn-link"
-                                                                    href="{{ route('password.request') }}">
-                                                                    {{ __('Forgot Your Password?') }}
-                                                                </a>
-                                                            @endif
                                                         </div>
                                                     </div>
                                                 </form>
