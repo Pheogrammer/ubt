@@ -2,24 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\Models\Project as project;
+use App\Models\Blog as blog;
 
 Route::get('/', function () {
-    return view('welcome');
+    $projects = project::get();
+    return view('welcome', ['projects' => $projects]);
 });
 
 Route::get('projects', function () {
-    return view('projects');
+    $projects = project::get();
+    return view('projects', ['projects' => $projects]);
 });
 
 Route::get('contact', function () {
@@ -27,7 +20,8 @@ Route::get('contact', function () {
 });
 
 Route::get('blog', function () {
-    return view('blog');
+    $blog = blog::get();
+    return view('blog',['blog' => $blog]);
 });
 
 
@@ -41,5 +35,12 @@ Route::get('viewproject', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/admin', [App\Http\Controllers\AdminController::class, 'index'])->name('admin');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+
+// Blogs
+Route::get('viewblog/{id}', [App\Http\Controllers\BlogController::class, 'viewblog'])->name('viewblog')->middleware('auth');
+Route::get('addblog', [App\Http\Controllers\BlogController::class, 'createblog'])->name('addblog')->middleware('auth');
+Route::post('storeblog', [App\Http\Controllers\BlogController::class, 'storeblog'])->name('storeblog')->middleware('auth');
+Route::get('editblog/{id}', [App\Http\Controllers\BlogController::class, 'editblog'])->name('editblog')->middleware('auth');
+Route::post('updateblog/{id}', [App\Http\Controllers\BlogController::class, 'updateblog'])->name('updateblog')->middleware('auth');
+

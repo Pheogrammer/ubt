@@ -204,9 +204,13 @@
                         data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
                         <div
                             class="card-body p-6 p-md-11 d-lg-flex flex-row align-items-lg-center justify-content-md-between text-center text-lg-start">
-                            <h3 class="display-4 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white">We are trusted by
-                                over 5000+ clients. Join them by using our services and grow your business.</h3>
-                            <a href="#" class="btn btn-lg btn-white rounded mb-0 text-nowrap">Join Us</a>
+                            <h3 class="display-4 mb-6 mb-lg-0 pe-lg-10 pe-xl-5 pe-xxl-18 text-white">
+                                {{-- We are trusted by
+                                over 5000+ clients. Join them by using our services and grow your business. --}}
+                            </h3>
+                            <a href="#" class="btn btn-lg btn-white rounded mb-0 text-nowrap">
+                                {{-- Join Us --}}
+                            </a>
                         </div>
                         <!--/.card-body -->
                     </div>
@@ -259,14 +263,16 @@
                             <div class="col-md-12 col-lg-3">
                                 <div class="widget">
                                     <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
-                                    <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to
+                                    {{-- <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to --}}
                                         you.</p>
                                     <div class="newsletter-wrapper">
                                         <!-- Begin Mailchimp Signup Form -->
                                         <div id="mc_embed_signup2">
-                                            <form action="" method="post" id="mc-embedded-subscribe-form2"
+                                            <form
+                                            {{-- action="" method="post" id="mc-embedded-subscribe-form2"
                                                 name="mc-embedded-subscribe-form" class="validate dark-fields"
-                                                target="_blank" novalidate>
+                                                target="_blank" novalidate --}}
+                                                >
                                                 @csrf
                                                 <div id="mc_embed_signup_scroll2">
                                                     <div class="mc-field-group input-group form-floating">

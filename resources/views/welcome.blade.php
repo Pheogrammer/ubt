@@ -241,34 +241,39 @@
             <div class="container py-17">
                 <div class="row text-center">
                     <div class="col-xl-11 col-xxl-10 mx-auto">
-                        <h2 class="fs-16 text-uppercase text-muted mb-3">Organization Facts</h2>
-                        <h3 class="display-4 mb-10 px-lg-20 px-xl-20">Save your time and money by choosing our
-                            professional team.</h3>
-                        <div class="row gy-6 text-center">
-                            <div class="col-md-6 col-lg-3">
-                                <div class="progressbar semi-circle purple" data-value="75"></div>
-                                <h4>New Visitors</h4>
-                                <p class="mb-0">Maecenas faucibus mollis interdum. Aenean eu leo.</p>
+                        <h2 class="fs-16 text-uppercase text-muted mb-3">Our Partners</h2>
+
+                        <br>
+                        <div class="px-lg-5">
+                            <div class="row gx-0 gx-md-8 gx-xl-12 gy-8 align-items-center">
+                                <div class="col-4 col-md-2">
+                                    <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img
+                                            src="{{ asset('img/basata.jpg') }}" alt="" /></figure>
+                                </div>
+                                <!--/column -->
+                                <div class="col-4 col-md-2">
+                                    <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img
+                                            src="{{ asset('img/Nafasi.png') }}" alt="" /></figure>
+                                </div>
+                                <!--/column -->
+                                <div class="col-4 col-md-2">
+                                    <img src="{{ asset('img/Switzerland.jpg') }}" alt="" height="80px" />
+                                </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <!--/column -->
+                                <div class="col-4 col-md-2">
+                                    <img src="{{ asset('img/RNE.png') }}" alt="" height="80px" />
+                                </div>
+                                {{-- <!--/column -->
+                              <div class="col-4 col-md-2">
+                                <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img src="assets/img/brands/c5.png" alt="" /></figure>
+                              </div>
+                              <!--/column -->
+                              <div class="col-4 col-md-2">
+                                <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img src="assets/img/brands/c6.png" alt="" /></figure>
+                              </div> --}}
+                                <!--/column -->
                             </div>
-                            <!-- /column -->
-                            <div class="col-md-6 col-lg-3">
-                                <div class="progressbar semi-circle leaf" data-value="80"></div>
-                                <h4>Social Media</h4>
-                                <p class="mb-0">Maecenas faucibus mollis interdum. Aenean eu leo.</p>
-                            </div>
-                            <!-- /column -->
-                            <div class="col-md-6 col-lg-3">
-                                <div class="progressbar semi-circle pink" data-value="60"></div>
-                                <h4>Referrals</h4>
-                                <p class="mb-0">Maecenas faucibus mollis interdum. Aenean eu leo.</p>
-                            </div>
-                            <!-- /column -->
-                            <div class="col-md-6 col-lg-3">
-                                <div class="progressbar semi-circle yellow" data-value="90"></div>
-                                <h4>Search Engines</h4>
-                                <p class="mb-0">Maecenas faucibus mollis interdum. Aenean eu leo.</p>
-                            </div>
-                            <!-- /column -->
+                            <!--/.row -->
                         </div>
                         <!-- /.row -->
                     </div>
@@ -445,102 +450,30 @@
             <div class="swiper-container grid-view mb-19" data-margin="30" data-dots="true" data-items-xl="3"
                 data-items-md="2" data-items-xs="1">
                 <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd7.jpg') }}"
-                                    alt="" /><a class="item-link" href="/img/photos/pd7-full.jpg" data-glightbox
-                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                            </figure>
-                            <div class="project-details d-flex justify-content-center flex-column">
-                                <div class="post-header">
-                                    <h2 class="post-title h3"><a href="#" class="link-dark">Cras
-                                            Fermentum Sem</a></h2>
-                                    <div class="post-category text-ash">Stationary</div>
+                    <div class="swiper-wrapper ">
+                        @if (count($projects) > 0)
+                            )
+                            <!--/.swiper-slide -->
+                            <div class="swiper-slide">
+                                <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}"
+                                        alt="" /><a class="item-link" href="/img/photos/pd12-full.jpg"
+                                        data-glightbox data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
+                                </figure>
+                                <div class="project-details d-flex justify-content-center flex-column">
+                                    <div class="post-header">
+                                        <h2 class="post-title h3"><a href="#" class="link-dark">Porta
+                                                Ornare Cras</a></h2>
+                                        <div class="post-category text-ash">Branding</div>
+                                    </div>
+                                    <!-- /.post-header -->
                                 </div>
-                                <!-- /.post-header -->
+                                <!-- /.project-details -->
                             </div>
-                            <!-- /.project-details -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd8.jpg') }}"
-                                    alt="" /><a class="item-link" href="/img/photos/pd8-full.jpg" data-glightbox
-                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                            </figure>
-                            <div class="project-details d-flex justify-content-center flex-column">
-                                <div class="post-header">
-                                    <h2 class="post-title h3"><a href="#" class="link-dark">Mollis
-                                            Ipsum Mattis</a></h2>
-                                    <div class="post-category text-ash">Magazine, Book</div>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.project-details -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd9.jpg') }}"
-                                    alt="" /><a class="item-link" href="/img/photos/pd9-full.jpg" data-glightbox
-                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                            </figure>
-                            <div class="project-details d-flex justify-content-center flex-column">
-                                <div class="post-header">
-                                    <h2 class="post-title h3"><a href="#" class="link-dark">Ipsum
-                                            Ultricies Cursus</a></h2>
-                                    <div class="post-category text-ash">Packaging</div>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.project-details -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd10.jpg') }}"
-                                    alt="" /><a class="item-link" href="/img/photos/pd10-full.jpg" data-glightbox
-                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                            </figure>
-                            <div class="project-details d-flex justify-content-center flex-column">
-                                <div class="post-header">
-                                    <h2 class="post-title h3"><a href="#" class="link-dark">Inceptos
-                                            Euismod Egestas</a></h2>
-                                    <div class="post-category text-ash">Stationary, Branding</div>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.project-details -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd11.jpg') }}"
-                                    alt="" /><a class="item-link" href="/img/photos/pd11-full.jpg" data-glightbox
-                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                            </figure>
-                            <div class="project-details d-flex justify-content-center flex-column">
-                                <div class="post-header">
-                                    <h2 class="post-title h3"><a href="#" class="link-dark">Ipsum
-                                            Mollis Vulputate</a></h2>
-                                    <div class="post-category text-ash">Packaging</div>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.project-details -->
-                        </div>
-                        <!--/.swiper-slide -->
-                        <div class="swiper-slide">
-                            <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}"
-                                    alt="" /><a class="item-link" href="/img/photos/pd12-full.jpg" data-glightbox
-                                    data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                            </figure>
-                            <div class="project-details d-flex justify-content-center flex-column">
-                                <div class="post-header">
-                                    <h2 class="post-title h3"><a href="#" class="link-dark">Porta
-                                            Ornare Cras</a></h2>
-                                    <div class="post-category text-ash">Branding</div>
-                                </div>
-                                <!-- /.post-header -->
-                            </div>
-                            <!-- /.project-details -->
-                        </div>
+                        @else
+                            {{-- <h2 class="post-title h3"><a href="#" class="link-dark">No posted projects for now,
+                                    come back later!</a></h2> --}}
+                        @endif
+
                         <!--/.swiper-slide -->
                     </div>
                     <!--/.swiper-wrapper -->

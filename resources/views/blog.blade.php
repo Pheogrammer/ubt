@@ -21,64 +21,85 @@
     <!-- /section -->
     <section class="wrapper bg-light">
         <div class="container pb-14 pb-md-16">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="blog classic-view mt-n17">
-                        <article class="post">
-                            <div class="card">
-                                <figure class="card-img-top overlay overlay-1 hover-scale"><a class="link-dark"
-                                        href="blog-post.html"><img src="/img/photos/b1.jpg" alt="" /></a>
-                                    <figcaption>
-                                        <h5 class="from-top mb-0">Read More</h5>
-                                    </figcaption>
-                                </figure>
-                                <div class="card-body">
-                                    <div class="post-header">
-                                        <div class="post-category text-line">
-                                            <a href="readblog" class="hover" rel="category">Teamwork</a>
+            {{--  --}}
+            @if (count($blog) > 0)
+                )
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="blog classic-view mt-n17">
+                            <article class="post">
+                                <div class="card">
+                                    <figure class="card-img-top overlay overlay-1 hover-scale"><a class="link-dark"
+                                            href="blog-post.html"><img src="/img/photos/b1.jpg" alt="" /></a>
+                                        <figcaption>
+                                            <h5 class="from-top mb-0">Read More</h5>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="card-body">
+                                        <div class="post-header">
+                                            <div class="post-category text-line">
+                                                <a href="readblog" class="hover" rel="category">Teamwork</a>
+                                            </div>
+                                            <!-- /.post-category -->
+                                            <h2 class="post-title mt-1 mb-0"><a class="link-dark" href="blog-post.html">Amet
+                                                    Dolor Bibendum Parturient Cursus</a></h2>
                                         </div>
-                                        <!-- /.post-category -->
-                                        <h2 class="post-title mt-1 mb-0"><a class="link-dark" href="blog-post.html">Amet
-                                                Dolor Bibendum Parturient Cursus</a></h2>
+                                        <!-- /.post-header -->
+                                        <div class="post-content">
+                                            <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
+                                                odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla
+                                                vitae
+                                                elit libero, a pharetra augue. Praesent commodo cursus magna, vel
+                                                scelerisque
+                                                nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis
+                                                consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus
+                                                commodo,
+                                                tortor mauris condimentum nibh. Cras mattis consectetur purus sit amet
+                                                fermentum. Sed posuere consectetur.</p>
+                                        </div>
+                                        <!-- /.post-content -->
                                     </div>
-                                    <!-- /.post-header -->
-                                    <div class="post-content">
-                                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia
-                                            odio sem nec elit. Nullam quis risus eget urna mollis ornare vel. Nulla vitae
-                                            elit libero, a pharetra augue. Praesent commodo cursus magna, vel scelerisque
-                                            nisl consectetur et. Sed posuere consectetur est at lobortis. Cras mattis
-                                            consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo,
-                                            tortor mauris condimentum nibh. Cras mattis consectetur purus sit amet
-                                            fermentum. Sed posuere consectetur.</p>
+                                    <!--/.card-body -->
+                                    <div class="card-footer">
+                                        <ul class="post-meta d-flex mb-0">
+                                            <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Jul
+                                                    2022</span>
+                                            </li>
+                                            <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By
+                                                        Sandbox</span></a></li>
+                                            <li class="post-comments"><a href="#"><i
+                                                        class="uil uil-comment"></i>3<span>
+                                                        Comments</span></a></li>
+                                            <li class="post-likes ms-auto"><a href="readblog" style="color: #6b0304;">Read
+                                                    More</a></li>
+                                        </ul>
+                                        <!-- /.post-meta -->
                                     </div>
-                                    <!-- /.post-content -->
+                                    <!-- /.card-footer -->
                                 </div>
-                                <!--/.card-body -->
-                                <div class="card-footer">
-                                    <ul class="post-meta d-flex mb-0">
-                                        <li class="post-date"><i class="uil uil-calendar-alt"></i><span>5 Jul 2022</span>
-                                        </li>
-                                        <li class="post-author"><a href="#"><i class="uil uil-user"></i><span>By
-                                                    Sandbox</span></a></li>
-                                        <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3<span>
-                                                    Comments</span></a></li>
-                                        <li class="post-likes ms-auto"><a href="readblog" style="color: #6b0304;">Read
-                                                More</a></li>
-                                    </ul>
-                                    <!-- /.post-meta -->
-                                </div>
-                                <!-- /.card-footer -->
-                            </div>
-                            <!-- /.card -->
-                        </article>
-                        <!-- /.post -->
-                        {{-- for here --}}
+                                <!-- /.card -->
+                            </article>
+                            <!-- /.post -->
+                            {{-- for here --}}
+                        </div>
+                        <!-- /.blog -->
                     </div>
-                    <!-- /.blog -->
+                    <!-- /column -->
                 </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
+            @else
+                <section class="wrapper bg-light angled upper-end lower-end" id="who-are-we">
+                    <div class="container py-14 py-md-16">
+                        <div class="row mb-5">
+                            <div class="col-md-10 col-xl-8 col-xxl-7 mx-auto text-center">
+
+                                <h2 class="display-4 mb-4 px-lg-14">No posts for now, come back later</h2>
+                            </div>
+                            <!-- /column -->
+                        </div>
+                    </div>
+                </section>
+            @endif
+            {{-- <!-- /.row --> --}}
         </div>
 
         <hr class="dark my-14 my-md-17" />

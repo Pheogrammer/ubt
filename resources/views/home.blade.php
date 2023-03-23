@@ -3,22 +3,7 @@
     Admin
 @endsection
 @section('content')
-    <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
-        data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
-        <div class="container pt-10 pb-19 pt-md-0 pb-md-20 text-center">
-            <div class="row">
-                <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
-                    <h1 class="display-1 mb-3">
-                        <br> <br> <br>
-                    </h1>
-                    <p class="lead px-lg-5 px-xxl-8"></p>
-                </div>
-                <!-- /column -->
-            </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
-    </section>
+
 
     <section class="wrapper bg-light" id="who-are-we">
         <div class="container py-14 py-md-16">
@@ -29,6 +14,7 @@
                             class="svg-inject icon-svg icon-svg-md mb-4" alt="" />
                         <h2 class="display-4 mb-3">Blog Posts</h2>
                         <p class="lead fs-lg">
+                            <a href="{{route('addblog')}}" class="btn btn-primary">Add New Blog Post</a>
                         <table class="table table-light">
                             <thead class="thead-light">
                                 <tr>
@@ -56,7 +42,7 @@
                 <div class="col position-relative order-lg-2">
                     <div class="col">
                         <img src="{{ asset('/img/icons/lineal/list.svg') }}" class="svg-inject icon-svg icon-svg-md mb-4"
-                        alt="" />
+                            alt="" />
                         <h2 class="display-4 mb-3">Projects</h2>
                         <p class="lead fs-lg">
                         <table class="table table-light">

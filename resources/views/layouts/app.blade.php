@@ -40,20 +40,25 @@
                             <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                                 <ul class="navbar-nav">
                                     <li class="nav-item ">
-                                        <a class="nav-link" href="home">Home</a>
+                                        <a class="nav-link" href="home"> <i class="fa fa-home"
+                                                aria-hidden="true"></i> Home</a>
                                         <!--/.dropdown-menu -->
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="/#who-are-we">About Us</a>
+                                        <a class="nav-link " href="home#blog-posts"> <i class="fa fa-book"
+                                                aria-hidden="true"></i> Blog Posts</a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="projects">Projects</a>
+                                        <a class="nav-link " href="home#projects"> <i class="fas fa-hammer    "></i>
+                                            Projects</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="blog">Blog</a>
+                                        <a class="nav-link" href="users"> <i class="fa fa-user"
+                                                aria-hidden="true"></i> Users</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="contact">Contact Us</a>
+                                        <a class="nav-link" href="contact"> <i class="fa fa-inbox"
+                                                aria-hidden="true"></i> Messages</a>
                                     </li>
                                 </ul>
                                 <!-- /.navbar-nav -->
@@ -93,8 +98,8 @@
                                 @else
                                     <li class="nav-item dropdown">
                                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#"
-                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                            v-pre>
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" v-pre>
                                             <i class="fa fa-user-circle" aria-hidden="true"></i> {{ Auth::user()->name }}
                                         </a>
 
@@ -126,6 +131,22 @@
 
             </header>
             <!-- /header -->
+            <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
+                data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
+                <div class="container pt-10 pb-19 pt-md-0 pb-md-20 text-center">
+                    <div class="row">
+                        <div class="col-md-7 col-lg-6 col-xl-5 mx-auto">
+                            <h1 class="display-1 mb-3">
+                                <br> <br> <br>
+                            </h1>
+                            <p class="lead px-lg-5 px-xxl-8"></p>
+                        </div>
+                        <!-- /column -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </section>
             @yield('content')
 
             <footer class="bg-dark section-frame">
