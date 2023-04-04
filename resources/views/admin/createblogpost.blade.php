@@ -16,16 +16,34 @@
                                     <div class="form-floating mb-4">
                                         <input id="form_name" type="text" name="name" class="form-control"
                                             placeholder="Jane" required>
+                                        <label for="form_name">Blog Title *</label>
+                                        <div class="valid-feedback"> Looks good! </div>
+                                        <div class="invalid-feedback"> Please enter your first name. </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-floating mb-4">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Jane" required>
                                         <label for="form_name">Header Image *</label>
                                         <div class="valid-feedback"> Looks good! </div>
                                         <div class="invalid-feedback"> Please enter your first name. </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating mb-4">
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px"
+                                            required></textarea>
+                                        <label for="form_message">Paragraph 1 *</label>
+                                        <div class="valid-feedback"> Looks good! </div>
+                                        <div class="invalid-feedback"> Please enter your messsage. </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating mb-4">
                                         <input id="form_name" type="text" name="name" class="form-control"
                                             placeholder="Jane" required>
-                                        <label for="form_name">First Name *</label>
+                                        <label for="form_name">Image 1 *</label>
                                         <div class="valid-feedback"> Looks good! </div>
                                         <div class="invalid-feedback"> Please enter your first name. </div>
                                     </div>
@@ -35,40 +53,38 @@
                                     <div class="form-floating mb-4">
                                         <input id="form_lastname" type="text" name="surname" class="form-control"
                                             placeholder="Doe" required>
-                                        <label for="form_lastname">Last Name *</label>
+                                        <label for="form_lastname">Image 2 *</label>
                                         <div class="valid-feedback"> Looks good! </div>
                                         <div class="invalid-feedback"> Please enter your last name. </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="form-floating mb-4">
+                                        <input id="form_name" type="text" name="name" class="form-control"
+                                            placeholder="Jane" >
+                                        <label for="form_name">Image 3 *</label>
+                                        <div class="valid-feedback"> Looks good! </div>
+                                        <div class="invalid-feedback"> Please enter your first name. </div>
                                     </div>
                                 </div>
                                 <!-- /column -->
                                 <div class="col-md-6">
                                     <div class="form-floating mb-4">
-                                        <input id="form_email" type="email" name="email" class="form-control"
-                                            placeholder="jane.doe@example.com" required>
-                                        <label for="form_email">Email *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control"
+                                            placeholder="Doe" >
+                                        <label for="form_lastname">Image 4 *</label>
                                         <div class="valid-feedback"> Looks good! </div>
-                                        <div class="invalid-feedback"> Please provide a valid email address. </div>
+                                        <div class="invalid-feedback"> Please enter your last name. </div>
                                     </div>
                                 </div>
-                                <!-- /column -->
-                                <div class="col-md-6">
-                                    <div class="form-select-wrapper mb-4">
-                                        <select class="form-select" id="form-select" name="department" required>
-                                            <option selected disabled value="">Select a department</option>
-                                            <option value="Sales">Sales</option>
-                                            <option value="Marketing">Marketing</option>
-                                            <option value="Customer Support">Customer Support</option>
-                                        </select>
-                                        <div class="valid-feedback"> Looks good! </div>
-                                        <div class="invalid-feedback"> Please select a department. </div>
-                                    </div>
-                                </div>
+
                                 <!-- /column -->
                                 <div class="col-12">
                                     <div class="form-floating mb-4">
                                         <textarea id="form_message" name="message" class="form-control" placeholder="Your message" style="height: 150px"
                                             required></textarea>
-                                        <label for="form_message">Message *</label>
+                                        <label for="form_message">Paragraph 2 *</label>
                                         <div class="valid-feedback"> Looks good! </div>
                                         <div class="invalid-feedback"> Please enter your messsage. </div>
                                     </div>
@@ -76,7 +92,7 @@
                                 <!-- /column -->
                                 <div class="col-12 text-center">
                                     <input type="submit" class="btn btn-primary rounded-pill btn-send mb-3"
-                                        value="Send message">
+                                        value="Submit">
                                     <p class="text-muted"><strong>*</strong> These fields are required.</p>
                                 </div>
                                 <!-- /column -->

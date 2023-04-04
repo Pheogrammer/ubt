@@ -20,7 +20,7 @@ Author:		elemis
     --bs-gray-900: #1e2228;
     --bs-blue: #3f78e0;
     --bs-sky: #5eb9f0;
-    --bs-purple: #747ed1;
+    --bs-purple: #6b0304;
     --bs-grape: #605dba;
     --bs-violet: #a07cc5;
     --bs-pink: #d16b86;
@@ -4857,19 +4857,19 @@ fieldset:disabled .btn {
 
 .btn-purple {
     --bs-btn-color: #fff;
-    --bs-btn-bg: #747ed1;
-    --bs-btn-border-color: #747ed1;
+    --bs-btn-bg: #6b0304;
+    --bs-btn-border-color: #6b0304;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #747ed1;
-    --bs-btn-hover-border-color: #747ed1;
+    --bs-btn-hover-bg: #6b0304;
+    --bs-btn-hover-border-color: #6b0304;
     --bs-btn-focus-shadow-rgb: 137, 145, 216;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #747ed1;
-    --bs-btn-active-border-color: #747ed1;
+    --bs-btn-active-bg: #6b0304;
+    --bs-btn-active-border-color: #6b0304;
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #747ed1;
-    --bs-btn-disabled-border-color: #747ed1
+    --bs-btn-disabled-bg: #6b0304;
+    --bs-btn-disabled-border-color: #6b0304
 }
 
 .btn-grape {
@@ -5281,19 +5281,19 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-purple {
-    --bs-btn-color: #747ed1;
-    --bs-btn-border-color: #747ed1;
+    --bs-btn-color: #6b0304;
+    --bs-btn-border-color: #6b0304;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #747ed1;
-    --bs-btn-hover-border-color: #747ed1;
+    --bs-btn-hover-bg: #6b0304;
+    --bs-btn-hover-border-color: #6b0304;
     --bs-btn-focus-shadow-rgb: 116, 126, 209;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #747ed1;
-    --bs-btn-active-border-color: #747ed1;
+    --bs-btn-active-bg: #6b0304;
+    --bs-btn-active-border-color: #6b0304;
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-    --bs-btn-disabled-color: #747ed1;
+    --bs-btn-disabled-color: #6b0304;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #747ed1;
+    --bs-btn-disabled-border-color: #6b0304;
     --bs-gradient: none
 }
 
@@ -13489,7 +13489,7 @@ fieldset:disabled .btn {
 
 .text-purple {
     --bs-text-opacity: 1;
-    color: #747ed1 !important
+    color: #6b0304 !important
 }
 
 .text-grape {
@@ -27497,7 +27497,7 @@ a.hover-2.link-sky:before {
 }
 
 a.hover-2.link-purple:before {
-    background: #747ed1
+    background: #6b0304
 }
 
 a.hover-2.link-grape:before {
@@ -27954,7 +27954,7 @@ h6 {
 }
 
 .text-line.text-purple:before {
-    background-color: #747ed1
+    background-color: #6b0304
 }
 
 .text-line.text-grape:before {
@@ -28172,7 +28172,7 @@ h6 {
 }
 
 .underline-2.purple:after {
-    background: #747ed1
+    background: #6b0304
 }
 
 .underline-2.grape:after {
@@ -28338,7 +28338,7 @@ h6 {
 
 .underline-3.style-1.purple:after,
 .underline-3.style-1.purple:before {
-    border-color: #747ed1
+    border-color: #6b0304
 }
 
 .underline-3.style-1.grape:after,
@@ -29437,12 +29437,12 @@ figure img {
 
 .wrapper.bg-purple.angled.lower-start:after,
 .wrapper.bg-purple.angled.upper-start:before {
-    border-left-color: #747ed1
+    border-left-color: #6b0304
 }
 
 .wrapper.bg-purple.angled.lower-end:after,
 .wrapper.bg-purple.angled.upper-end:before {
-    border-right-color: #747ed1
+    border-right-color: #6b0304
 }
 
 .wrapper.bg-soft-purple.angled.lower-start:after,
@@ -30049,12 +30049,12 @@ figure img {
 }
 
 .link-purple {
-    color: #747ed1
+    color: #6b0304
 }
 
 .link-purple:focus,
 .link-purple:hover {
-    color: #747ed1
+    color: #6b0304
 }
 
 .link-grape {
@@ -30390,7 +30390,7 @@ blockquote.text-center.icon-top:before {
 }
 
 .unordered-list.bullet-purple li:before {
-    color: #747ed1
+    color: #6b0304
 }
 
 .unordered-list.bullet-grape li:before {
@@ -30502,7 +30502,7 @@ blockquote.text-center.icon-top:before {
 }
 
 .icon-list.bullet-soft-purple i {
-    color: #747ed1
+    color: #6b0304
 }
 
 .icon-list.bullet-soft-purple.bullet-bg i {
@@ -30511,7 +30511,7 @@ blockquote.text-center.icon-top:before {
 
 .icon-list.bullet-bg i[class*=bullet-soft-purple] {
     background-color: #e6e8f7 !important;
-    color: #747ed1 !important
+    color: #6b0304 !important
 }
 
 .icon-list.bullet-soft-grape i {
@@ -30761,16 +30761,16 @@ blockquote.text-center.icon-top:before {
 }
 
 .icon-list.bullet-purple i {
-    color: #747ed1
+    color: #6b0304
 }
 
 .icon-list.bullet-purple.bullet-bg i {
-    background-color: #747ed1;
+    background-color: #6b0304;
     color: #fff
 }
 
 .icon-list.bullet-bg i[class*=bullet-purple] {
-    background-color: #747ed1 !important;
+    background-color: #6b0304 !important;
     color: #fff !important
 }
 
@@ -33909,27 +33909,27 @@ button:focus {
     --bs-btn-active-border-color: $value;
     --bs-btn-active-shadow: var(--bs-btn-box-shadow);
     --bs-btn-color: #fff;
-    --bs-btn-bg: #747ed1;
-    --bs-btn-border-color: #747ed1;
+    --bs-btn-bg: #6b0304;
+    --bs-btn-border-color: #6b0304;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #747ed1;
-    --bs-btn-hover-border-color: #747ed1;
+    --bs-btn-hover-bg: #6b0304;
+    --bs-btn-hover-border-color: #6b0304;
     --bs-btn-focus-shadow-rgb: 137, 145, 216;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #747ed1;
-    --bs-btn-active-border-color: #747ed1;
+    --bs-btn-active-bg: #6b0304;
+    --bs-btn-active-border-color: #6b0304;
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #747ed1;
-    --bs-btn-disabled-border-color: #747ed1
+    --bs-btn-disabled-bg: #6b0304;
+    --bs-btn-disabled-border-color: #6b0304
 }
 
 .btn-purple.btn-expand {
-    color: #747ed1
+    color: #6b0304
 }
 
 .btn-purple.btn-expand:before {
-    background-color: #747ed1
+    background-color: #6b0304
 }
 
 .btn-grape {
@@ -34588,31 +34588,31 @@ button:focus {
 
 .btn-soft-purple {
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.05) !important;
-    --bs-btn-color: #747ed1;
+    --bs-btn-color: #6b0304;
     --bs-btn-bg: #e9eaf8;
     --bs-btn-border-color: #e9eaf8;
-    --bs-btn-hover-color: #747ed1;
+    --bs-btn-hover-color: #6b0304;
     --bs-btn-hover-bg: #e9eaf8;
     --bs-btn-hover-border-color: #e9eaf8;
     --bs-btn-focus-shadow-rgb: 215, 218, 242;
-    --bs-btn-active-color: #747ed1;
+    --bs-btn-active-color: #6b0304;
     --bs-btn-active-bg: #e9eaf8;
     --bs-btn-active-border-color: #e9eaf8;
     --bs-btn-active-shadow: 0rem 0.25rem 0.75rem rgba(30, 34, 40, 0.15);
-    --bs-btn-disabled-color: #747ed1;
+    --bs-btn-disabled-color: #6b0304;
     --bs-btn-disabled-bg: #e9eaf8;
     --bs-btn-disabled-border-color: #e9eaf8
 }
 
 .btn-soft-purple.btn-expand {
-    color: #747ed1
+    color: #6b0304
 }
 
 .btn-soft-purple.btn-expand i,
 .btn-soft-purple.btn-expand:before,
 .btn-soft-purple.btn-expand:hover,
 .btn-soft-purple.btn-expand:hover:before {
-    color: #747ed1
+    color: #6b0304
 }
 
 .btn-soft-purple.btn-expand:before {
@@ -39837,7 +39837,7 @@ button.hamburger:before {
 }
 
 .progressbar.purple svg path:last-child {
-    stroke: #747ed1
+    stroke: #6b0304
 }
 
 .progressbar.semi-circle.purple svg path:first-child {
@@ -41080,7 +41080,7 @@ img.svg-inject {
 
 .solid.text-purple .fill-primary,
 .solid.text-purple .fill-secondary {
-    fill: #747ed1
+    fill: #6b0304
 }
 
 .solid.text-grape .fill-primary,
@@ -41193,7 +41193,7 @@ img.svg-inject {
 }
 
 .solid-mono.text-purple .fill-primary {
-    fill: #747ed1
+    fill: #6b0304
 }
 
 .solid-mono.text-purple .fill-secondary {
@@ -41337,7 +41337,7 @@ img.svg-inject {
 }
 
 .solid-duo.text-purple-aqua .fill-primary {
-    fill: #747ed1
+    fill: #6b0304
 }
 
 .solid-duo.text-purple-aqua .fill-secondary {
@@ -41409,7 +41409,7 @@ img.svg-inject {
 }
 
 .solid-duo.text-purple-pink .fill-primary {
-    fill: #747ed1
+    fill: #6b0304
 }
 
 .solid-duo.text-purple-pink .fill-secondary {
@@ -47153,7 +47153,7 @@ video.player {
 
 .btn-purple.btn-circle.ripple::after,
 .btn-purple.btn-circle.ripple::before {
-    background: #747ed1
+    background: #6b0304
 }
 
 .btn-grape.btn-circle.ripple::after,
@@ -48022,7 +48022,7 @@ table.shopping-cart td {
 }
 
 .bg-dot.purple {
-    background-image: radial-gradient(#747ed1 2px, transparent 2.5px)
+    background-image: radial-gradient(#6b0304 2px, transparent 2.5px)
 }
 
 .bg-dot.grape {
@@ -48102,7 +48102,7 @@ table.shopping-cart td {
 }
 
 .bg-line.purple {
-    background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) .8px, #747ed1 1.6px, #747ed1 3px, rgba(255, 255, 255, 0) 3.8px, rgba(255, 255, 255, 0) 10px)
+    background: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0) .8px, #6b0304 1.6px, #6b0304 3px, rgba(255, 255, 255, 0) 3.8px, rgba(255, 255, 255, 0) 10px)
 }
 
 .bg-line.grape {
@@ -48204,7 +48204,7 @@ table.shopping-cart td {
 }
 
 .shape.purple .svg-fill {
-    fill: #747ed1
+    fill: #6b0304
 }
 
 .shape.soft-purple .svg-fill {

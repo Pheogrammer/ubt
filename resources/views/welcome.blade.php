@@ -170,7 +170,7 @@
                     <div class="row gx-lg-8 gx-xl-12 gy-11 text-center d-flex align-items-end">
                         <div class="col-sm col-md col-lg mx-auto">
                             <div class="px-md-3 px-lg-0 px-xl-3">
-                                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5"> <i class="fa fa-map"
+                                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5" style="color:#6b0304;"> <i class="fa fa-map" style="color:#6b0304;"
                                         aria-hidden="true"></i> </div>
                                 <h3 class="fs-22">Mission</h3>
                                 <p class="mb-2">Our mission is to provide a well-organized, coordinated, and resourceful
