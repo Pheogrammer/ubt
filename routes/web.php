@@ -21,7 +21,7 @@ Route::get('contact', function () {
 
 Route::get('blog', function () {
     $blog = blog::get();
-    return view('blog',['blog' => $blog]);
+    return view('blog', ['blog' => $blog]);
 });
 
 
@@ -43,4 +43,5 @@ Route::get('addblog', [App\Http\Controllers\BlogController::class, 'createblog']
 Route::post('storeblog', [App\Http\Controllers\BlogController::class, 'storeblog'])->name('storeblog')->middleware('auth');
 Route::get('editblog/{id}', [App\Http\Controllers\BlogController::class, 'editblog'])->name('editblog')->middleware('auth');
 Route::post('updateblog/{id}', [App\Http\Controllers\BlogController::class, 'updateblog'])->name('updateblog')->middleware('auth');
+
 
