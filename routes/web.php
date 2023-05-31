@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Project as project;
 use App\Models\Blog as blog;
 
+use App\Http\Controllers\HomeController;
+
 Route::get('/', function () {
     $projects = project::get();
     return view('welcome', ['projects' => $projects]);
@@ -35,13 +37,12 @@ Route::get('viewproject', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home')->middleware('auth');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// Blogs
-Route::get('viewblog/{id}', [App\Http\Controllers\BlogController::class, 'viewblog'])->name('viewblog')->middleware('auth');
-Route::get('addblog', [App\Http\Controllers\BlogController::class, 'createblog'])->name('addblog')->middleware('auth');
-Route::post('storeblog', [App\Http\Controllers\BlogController::class, 'storeblog'])->name('storeblog')->middleware('auth');
-Route::get('editblog/{id}', [App\Http\Controllers\BlogController::class, 'editblog'])->name('editblog')->middleware('auth');
-Route::post('updateblog/{id}', [App\Http\Controllers\BlogController::class, 'updateblog'])->name('updateblog')->middleware('auth');
+Route::get('Adminblog',[HomeController::class,'blog'])->name('Adminblog')->middleware('auth');
+Route::get('CreateBlog',[HomeController::class,'CreateBlog'])->name('CreateBlog')->middleware('auth');
+Route::post('savePublishedBlog',[HomeController::class,'savePublishedBlog'])->name('savePublishedBlog')->middleware('auth');
+Route::get('Viewblog/{id}',[HomeController::class,'Viewblog'])->name('Viewblog')->middleware('auth');
 
+//
 

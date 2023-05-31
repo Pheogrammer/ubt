@@ -3,26 +3,28 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Blog;
 
 class BlogController extends Controller
 {
     //
     public function createblog()
     {
-        return view('admin.createblogpost');
+        $blog = Blog::orderby('created_at','desc')->get();
+        return view('admin.createblogpost', ['blog' => $blog]);
     }
 
     public function storeblog(Request $request)
     {
         $request->validate([
-            'heading' => 'required',
-            'paragraph1' => 'required',
-            'paragraph2' => 'required',
-            'image1' => 'required',
-            'image2' => 'required',
-            'image3' => 'required',
-            'image4' => 'required',
-            'image5' => 'required',
+            'title' => 'required',
+            'half1' => 'required',
+            'half2' => 'required',
+            'image1' => 'required|file|mimes:jpeg,jpg,png,gif',
+            'image2' => 'required|file|mimes:jpeg,jpg,png,gif',
+            'image3' => 'required|file|mimes:jpeg,jpg,png,gif',
+            'image4' => 'nullable|file|mimes:jpeg,jpg,png,gif',
+            'image5' => 'nullable|file|mimes:jpeg,jpg,png,gif',
         ]);
     }
 }

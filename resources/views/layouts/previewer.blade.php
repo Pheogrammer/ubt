@@ -31,53 +31,6 @@
                                 <img class="logo-light" src="{{ asset('/ubt.png') }}" height="40px" alt="" />
                             </a>
                         </div>
-                        <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-                            <div class="offcanvas-header d-lg-none">
-                                <h3 class="text-white fs-30 mb-0">Uswazi Born Talent</h3>
-                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item ">
-                                        <a class="nav-link" href="/#home">Home</a>
-                                        <!--/.dropdown-menu -->
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link " href="/#who-are-we">About Us</a>
-                                    </li>
-                                    <li class="nav-item ">
-                                        <a class="nav-link " href="projects">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="blog">Blog</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="contact">Contact Us</a>
-                                    </li>
-                                </ul>
-                                <!-- /.navbar-nav -->
-                                <div class="offcanvas-footer d-lg-none">
-                                    <div>
-                                        <a href="" class="link-inverse"><span
-                                                class="__cf_email__">[email&#160;protected]</span></a>
-                                        <br /> 000 000 000 0 <br />
-                                        <nav class="nav social social-white mt-4">
-                                            <a href="#">
-                                                <i class="fab fa-twitter    "></i>
-                                            </a>
-                                            <a href="#"><i class="fab fa-facebook"></i></a>
-                                            <a href="#"><i class="fab fa-dribbble"></i></a>
-                                            <a href="#"><i class="fab fa-instagram"></i></a>
-                                            <a href="#"><i class="fab fa-youtube"></i></a>
-                                        </nav>
-                                        <!-- /.social -->
-                                    </div>
-                                </div>
-                                <!-- /.offcanvas-footer -->
-                            </div>
-                            <!-- /.offcanvas-body -->
-                        </div>
                         <!-- /.navbar-collapse -->
                         <div class="navbar-other w-100 d-flex ms-auto">
                             <ul class="navbar-nav flex-row align-items-center ms-auto">
@@ -86,15 +39,7 @@
                                         <i class="fa fa-info-circle" aria-hidden="true"></i>
                                     </a>
                                 </li>
-                                &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                                @guest
-                                    @if (Route::has('login'))
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('login') }}"> <i
-                                                    class="fas fa-door-open    "></i> {{ __('Login') }}</a>
-                                        </li>
-                                    @endif
-                                @else
+
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('home') }}"> {{ __(' Dashboard') }}</a>
                                     </li>
@@ -118,8 +63,6 @@
                                             </form>
                                         </div>
                                     </li>
-                                @endguest
-
                                 <li class="nav-item d-lg-none">
                                     <button class="hamburger offcanvas-nav-btn"><span></span></button>
                                 </li>
@@ -131,69 +74,6 @@
                     <!-- /.container -->
                 </nav>
                 <!-- /.navbar -->
-                <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
-                    <div class="offcanvas-header">
-                        <h3 class="text-white fs-30 mb-0">UBT</h3>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close">
-                        </button>
-                    </div>
-                    <div class="offcanvas-body pb-6">
-                        <div class="widget mb-8">
-                            <p>a platform that helps to unearth, nurture and develop young talent from the street as a
-                                way to preserve and promote our culture and the heritage of our ancestors through the
-                                arts.</p>
-                        </div>
-                        <!-- /.widget -->
-                        <div class="widget mb-8">
-                            <h4 class="widget-title text-white mb-3">Contact Info</h4>
-                            <address> Adress </address>
-                            <a
-                                href="">Email</a><br />
-                            000 000 000 0
-                        </div>
-                        <!-- /.widget -->
-                        <div class="widget mb-8">
-                            <h4 class="widget-title text-white mb-3">Learn More</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="/#home">Home</a></li>
-                                <li><a href="/#who-are-we">About Us</a></li>
-                                <li><a href="projects">Projects</a></li>
-                                <li><a href="blog">Blog</a></li>
-                                <li><a href="contact">Contact Us</a></li>
-                            </ul>
-                        </div>
-                        <!-- /.widget -->
-                        <div class="widget">
-                            <h4 class="widget-title text-white mb-3">Follow Us</h4>
-                            <nav class="nav social social-white">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-youtube"></i></a>
-                            </nav>
-                            <!-- /.social -->
-                        </div>
-                        <!-- /.widget -->
-                    </div>
-                    <!-- /.offcanvas-body -->
-                </div>
-                <!-- /.offcanvas -->
-                <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
-                    <div class="container d-flex flex-row py-6">
-                        <form class="search-form w-100">
-                            @csrf
-                            <input id="search-form" type="text" class="form-control"
-                                placeholder="Type keyword and hit enter">
-
-                            <!-- /.search-form -->
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </form>
-                    </div>
-                    <!-- /.container -->
-                </div>
-                <!-- /.offcanvas -->
             </header>
             <!-- /header -->
             @yield('content')
