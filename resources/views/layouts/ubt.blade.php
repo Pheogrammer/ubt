@@ -83,7 +83,7 @@
                             <ul class="navbar-nav flex-row align-items-center ms-auto">
                                 <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas"
                                         data-bs-target="#offcanvas-info">
-                                        <i class="fa fa-info-circle"></i>
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
