@@ -43,6 +43,8 @@ Route::get('Adminblog',[HomeController::class,'blog'])->name('Adminblog')->middl
 Route::get('CreateBlog',[HomeController::class,'CreateBlog'])->name('CreateBlog')->middleware('auth');
 Route::post('savePublishedBlog',[HomeController::class,'savePublishedBlog'])->name('savePublishedBlog')->middleware('auth');
 Route::get('Viewblog/{id}',[HomeController::class,'Viewblog'])->name('Viewblog')->middleware('auth');
+Route::get('editBlog/{id}',[HomeController::class,'editBlog'])->name('editBlog')->middleware('auth');
+Route::post('saveeditedBlog',[HomeController::class,'saveeditedBlog'])->name('saveeditedBlog')->middleware('auth');
 
 //
 

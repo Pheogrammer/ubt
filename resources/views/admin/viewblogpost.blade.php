@@ -98,6 +98,8 @@
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
+                        <a href="{{route('editBlog',$blog->id)}}" class="btn btn-secondary">Edit Blog</a>
+                        <a href="{{route('Adminblog')}}" class="btn btn-primary">Go Back</a>
                     </div>
                     <!-- /.blog -->
                 </div>
