@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('boot/css/docs.min.css')}}">
 </head>
-<body>
+<body style="background-color: #d3d3d3 ;">
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

@@ -300,7 +300,7 @@ class HomeController extends Controller
     {
         $staff = Staff::orderby('name', 'asc')->get();
         $partner = Partner::orderby('name', 'asc')->get();
-        $contact = Contact::get();
+        $contact = Contact::first();
 
         return view('admin.management', ['staff' => $staff, 'partner' => $partner, 'contact' => $contact]);
     }
@@ -471,6 +471,13 @@ class HomeController extends Controller
 
     public function changeContact(Request $request)
     {
+        $contact = Contact::first();
+        $contact->phone = $request->input('phone');
+        $contact->email = $request->input('email');
+        $contact->address = $request->input('address');
+        $contact->save();
+
+        return redirect()->back()->with('status', 'Contact information saved successfully');
     }
 
     public function deleteblog($id)

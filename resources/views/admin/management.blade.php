@@ -209,11 +209,7 @@
                     <div class="card-header">{{ __('Management') }}</div>
 
                     <div class="card-body">
-                        @if (session('status'))
-                            <div class="alert alert-success" role="alert">
-                                {{ session('status') }}
-                            </div>
-                        @endif
+
                         <!-- Button trigger modal -->
 
 
@@ -227,17 +223,19 @@
                                             <div class="col ">
                                                 <h4 class="card-title">{{ $item->name }}</h4>
                                                 <p class="card-text">
-                                                    <img src="{{ asset('images/partners/' . $item->logo) }}" alt=""
-                                                    srcset="" style="max-height:200px;">
+                                                    <img src="{{ asset('images/partners/' . $item->logo) }}"
+                                                        alt="" srcset="" style="max-height:200px;">
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="card-footer text-muted">
                                         <button type="button" class="btn btn-warning" data-toggle="modal"
-                                            data-target=".bd-example-modal-lg{{ $item->id }}-partner">Edit Partner</button>
-                                        <div class="modal fade bd-example-modal-lg{{ $item->id }}-partner" tabindex="-1"
-                                            role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                            data-target=".bd-example-modal-lg{{ $item->id }}-partner">Edit
+                                            Partner</button>
+                                        <div class="modal fade bd-example-modal-lg{{ $item->id }}-partner"
+                                            tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+                                            aria-hidden="true">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content container">
                                                     <div class="card">
@@ -251,15 +249,15 @@
                                                                 <div class="form-group">
                                                                     <label for="">Name</label>
                                                                     <input type="text" name="name"
-                                                                        value="{{ $item->name }}" required id=""
-                                                                        class="form-control" placeholder=""
-                                                                        aria-describedby="helpId">
+                                                                        value="{{ $item->name }}" required
+                                                                        id="" class="form-control"
+                                                                        placeholder="" aria-describedby="helpId">
                                                                 </div> <br>
                                                                 <div class="form-group">
                                                                     <label for="">Logo</label>
                                                                     <input type="file" name="image" id=""
-                                                                        class="form-control" placeholder="" accept="image/*"
-                                                                        aria-describedby="helpId">
+                                                                        class="form-control" placeholder=""
+                                                                        accept="image/*" aria-describedby="helpId">
                                                                 </div><br> <br>
                                                                 <div
                                                                     class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
@@ -330,6 +328,55 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header">{{ __('Company Contacts') }}</div>
+
+                        <div class="card-body">
+
+                                <form action="{{route('changeContact')}}" method="post">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="">Office Phone</label>
+                                                <input type="text" value="{{ $contact->phone ?? '' }}" name="phone" id="" class="form-control"
+                                                    placeholder="" aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="">Office Email</label>
+                                                <input type="email" value="{{ $contact->email ?? '' }}" name="email" id="" class="form-control"
+                                                    placeholder="" aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="">Office Address</label>
+                                                <input type="text" value="{{ $contact->address ?? '' }}" name="address" id="" class="form-control"
+                                                    placeholder="" aria-describedby="helpId">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+                                        <div class="col  ">
+                                            <button type="submit"
+                                                class="btn btn-primary">Update</button>
+                                            <a href="#" class="btn btn-danger">Cancel</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+
                         </div>
                     </div>
                 </div>
