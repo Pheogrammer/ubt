@@ -29,7 +29,38 @@
                                 </ul>
                             </div>
                         @endif
-                        {{ __('You are logged in!') }}
+                        <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+                            <div class="col  ">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Blogs</h4>
+                                        <p class="card-text">{{ count($blogTotal) }}</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col  ">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Projects</h4>
+                                        <p class="card-text">{{ count($projectTotal) }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col  ">
+                                <div class="card text-center">
+                                    <img class="card-img-top" src="holder.js/100px180/" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Partners</h4>
+                                        <p class="card-text">{{ count($partnerTotal) }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -29,7 +29,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $blogTotal = Blog::get();
+        $projectTotal = Project::get();
+        $partnerTotal = Partner::get();
+        return view('home',['blogTotal'=>$blogTotal,'projectTotal'=>$projectTotal,'partnerTotal'=>$partnerTotal]);
     }
 
     public function blog()
