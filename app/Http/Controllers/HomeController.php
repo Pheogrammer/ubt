@@ -399,9 +399,75 @@ class HomeController extends Controller
         }
     }
 
-    public function updatePartner(Request $request)
+    public function registerPartner(Request $request)
     {
+        $request->validate([
+            'name' => 'required',
+            'image' => 'required|file|mimes:jpeg,jpg,png,gif',
+        ]);
+
+        $partner = new Partner();
+        $partner->name = $request->input('name');
+
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            $image = $request->file('image');
+            $destinationPath = public_path('images/partners');
+
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0777, true);
+            }
+
+            $imageName = preg_replace('/\s+/', '_', $partner->name) . '_' . time() . '.' . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+
+            $partner->logo = $imageName;
+        }
+
+        $partner->save();
+
+        return redirect()->back()->with(['status' => 'Partner registered successfully']);
     }
+    public function updatePartner(Request $request, $id)
+    {
+        $request->validate([
+            'name' => 'required',
+            'image' => 'nullable|file|mimes:jpeg,jpg,png,gif',
+        ]);
+
+        $partner = Partner::find($id);
+        $partner->name = $request->input('name');
+
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+            $image = $request->file('image');
+            $destinationPath = public_path('images/partners');
+
+            if (!file_exists($destinationPath)) {
+                mkdir($destinationPath, 0777, true);
+            }
+
+            $imageName = preg_replace('/\s+/', '_', $partner->name) . '_' . time() . '.' . $image->getClientOriginalExtension();
+            $image->move($destinationPath, $imageName);
+
+            $partner->logo = $imageName;
+        }
+
+        $partner->save();
+
+        return redirect()->back()->with(['status' => 'Partner updated successfully']);
+    }
+
+    public function deletepartner($id)
+    {
+        $partner = Partner::find($id);
+
+        if ($partner) {
+            $partner->delete();
+            return redirect()->back()->with(['status' => 'Partner deleted successfully']);
+        } else {
+            return redirect()->back()->with(['error' => 'Partner not found']);
+        }
+    }
+
 
     public function changeContact(Request $request)
     {
@@ -412,10 +478,6 @@ class HomeController extends Controller
     }
 
     public function deleteproject($id)
-    {
-    }
-
-    public function deletepartner($id)
     {
     }
 }
