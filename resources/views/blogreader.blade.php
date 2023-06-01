@@ -13,7 +13,7 @@
     @if (count($proj1) < 1)
     @else
         <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
-            data-image-src="{{ asset('/img/photos/bg27.jpg') }}">
+            data-image-src="{{ public_path('/img/photos/bg27.jpg') }}">
             <div class="container pt-10 pb-19 pt-md-14 pb-md-20 text-center">
                 <div class="row">
                     <div class="col-md-10 col-xl-8 mx-auto">
@@ -40,7 +40,7 @@
                         <div class="blog single mt-n17">
                             <div class="card">
                                 @if ($blog->image1 != null)
-                                    <figure class="card-img-top"><img src="{{ asset('images/blogs/' . $blog->image1) }}"
+                                    <figure class="card-img-top"><img src="{{ public_path('images/blogs/' . $blog->image1) }}"
                                             alt="" /></figure>
                                 @endif
                                 <div class="card-body">
@@ -53,10 +53,10 @@
                                                     @if ($blog->image2 != null)
                                                         <div class="col-md-6">
                                                             <figure class="hover-scale rounded cursor-dark"><a
-                                                                    href="{{ asset('images/blogs/' . $blog->image2) }}"
+                                                                    href="{{ public_path('images/blogs/' . $blog->image2) }}"
                                                                     data-glightbox="title: Heading; description: Purus Vulputate Sem Tellus Quam"
                                                                     data-gallery="post"> <img
-                                                                        src="{{ asset('images/blogs/' . $blog->image2) }}"
+                                                                        src="{{ public_path('images/blogs/' . $blog->image2) }}"
                                                                         alt="" /></a></figure>
                                                         </div>
                                                     @endif
@@ -64,9 +64,9 @@
                                                     @if ($blog->image3 != null)
                                                         <div class="col-md-6">
                                                             <figure class="hover-scale rounded cursor-dark"><a
-                                                                    href="{{ asset('images/blogs/' . $blog->image3) }}"
+                                                                    href="{{ public_path('images/blogs/' . $blog->image3) }}"
                                                                     data-glightbox data-gallery="post"> <img
-                                                                        src="{{ asset('images/blogs/' . $blog->image3) }}"
+                                                                        src="{{ public_path('images/blogs/' . $blog->image3) }}"
                                                                         alt="" /></a></figure>
                                                         </div>
                                                     @endif
@@ -78,10 +78,10 @@
                                                     @if ($blog->image4 != null)
                                                         <div class="col-md-6">
                                                             <figure class="hover-scale rounded cursor-dark"><a
-                                                                    href="{{ asset('images/blogs/' . $blog->image4) }}"
+                                                                    href="{{ public_path('images/blogs/' . $blog->image4) }}"
                                                                     data-glightbox="title: Heading; description: Purus Vulputate Sem Tellus Quam"
                                                                     data-gallery="post"> <img
-                                                                        src="{{ asset('images/blogs/' . $blog->image4) }}"
+                                                                        src="{{ public_path('images/blogs/' . $blog->image4) }}"
                                                                         alt="" /></a></figure>
                                                         </div>
                                                     @endif
@@ -89,9 +89,9 @@
                                                     @if ($blog->image5 != null)
                                                         <div class="col-md-6">
                                                             <figure class="hover-scale rounded cursor-dark"><a
-                                                                    href="{{ asset('images/blogs/' . $blog->image5) }}"
+                                                                    href="{{ public_path('images/blogs/' . $blog->image5) }}"
                                                                     data-glightbox data-gallery="post"> <img
-                                                                        src="{{ asset('images/blogs/' . $blog->image5) }}"
+                                                                        src="{{ public_path('images/blogs/' . $blog->image5) }}"
                                                                         alt="" /></a></figure>
                                                         </div>
                                                     @endif

@@ -43,7 +43,7 @@
                             </div> <br>
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                                 <div class="col  ">
-                                    <img src="{{ asset('images/blogs/' . $blog->image1) }}"
+                                    <img src="{{ public_path('images/blogs/' . $blog->image1) }}"
                                         class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                                         alt="">
                                 </div>
@@ -78,12 +78,12 @@
                             </div><br><br>
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                                 <div class="col  ">
-                                    <img src="{{ asset('images/blogs/' . $blog->image2) }}"
+                                    <img src="{{ public_path('images/blogs/' . $blog->image2) }}"
                                         class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                                         alt="">
                                 </div>
                                 <div class="col  ">
-                                    <img src="{{ asset('images/blogs/' . $blog->image3) }}"
+                                    <img src="{{ public_path('images/blogs/' . $blog->image3) }}"
                                         class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                                         alt="">
                                 </div>
@@ -107,12 +107,12 @@
                             <br>
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                                 <div class="col  ">
-                                    <img src="{{ asset('images/blogs/' . $blog->image4) }}"
+                                    <img src="{{ public_path('images/blogs/' . $blog->image4) }}"
                                         class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                                         alt="">
                                 </div>
                                 <div class="col  ">
-                                    <img src="{{ asset('images/blogs/' . $blog->image5) }}"
+                                    <img src="{{ public_path('images/blogs/' . $blog->image5) }}"
                                         class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
                                         alt="">
                                 </div>

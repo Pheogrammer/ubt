@@ -13,7 +13,7 @@
     @if (count($proj1) < 1)
     @else
         <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
-            data-image-src="{{ asset('/img/photos/shoutout.jpg') }}">
+            data-image-src="{{ public_path('/img/photos/shoutout.jpg') }}">
             <div class="container pt-10 pb-19 pt-md-14 pb-md-22 text-center">
                 <div class="row">
                     <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
@@ -39,7 +39,7 @@
                         <article class="mt-n21">
                             @if ($proj->image1 != null)
                                 <figure class="rounded mb-8 mb-md-12"><img
-                                        src="{{ asset('images/projects/' . $proj->image1) }}" alt="" /></figure>
+                                        src="{{ public_path('images/projects/' . $proj->image1) }}" alt="" /></figure>
                             @endif
                             <div class="row">
                                 <div class="col-lg-10 offset-lg-1">
@@ -67,9 +67,9 @@
                                 @if ($proj->image2 != null)
                                     <div class="item col-md-6">
                                         <figure class="hover-scale rounded cursor-dark"><a
-                                                href="{{ asset('images/projects/' . $proj->image2) }}" data-glightbox
+                                                href="{{ public_path('images/projects/' . $proj->image2) }}" data-glightbox
                                                 data-gallery="project-1"><img
-                                                    src="{{ asset('images/projects/' . $proj->image2) }}"
+                                                    src="{{ public_path('images/projects/' . $proj->image2) }}"
                                                     alt="" /></a>
                                         </figure>
                                 @endif
@@ -78,9 +78,9 @@
                             @if ($proj->image3 != null)
                                 <div class="item col-md-6">
                                     <figure class="hover-scale rounded cursor-dark"><a
-                                            href="{{ asset('images/projects/' . $proj->image3) }}" data-glightbox
+                                            href="{{ public_path('images/projects/' . $proj->image3) }}" data-glightbox
                                             data-gallery="project-1"><img
-                                                src="{{ asset('images/projects/' . $proj->image3) }}" alt="" /></a>
+                                                src="{{ public_path('images/projects/' . $proj->image3) }}" alt="" /></a>
                                     </figure>
                                 </div>
                             @endif
@@ -98,8 +98,8 @@
                         @if ($proj->image4 != null)
                             <div class="item col-md-6">
                                 <figure class="hover-scale rounded cursor-dark"><a
-                                        href="{{ asset('images/projects/' . $proj->image4) }}" data-glightbox
-                                        data-gallery="project-1"><img src="{{ asset('images/projects/' . $proj->image4) }}"
+                                        href="{{ public_path('images/projects/' . $proj->image4) }}" data-glightbox
+                                        data-gallery="project-1"><img src="{{ public_path('images/projects/' . $proj->image4) }}"
                                             alt="" /></a>
                                 </figure>
                             </div>
@@ -108,8 +108,8 @@
                         @if ($proj->image5 != null)
                             <div class="item col-md-6">
                                 <figure class="hover-scale rounded cursor-dark"><a
-                                        href="{{ asset('images/projects/' . $proj->image5) }}" data-glightbox
-                                        data-gallery="project-1"><img src="{{ asset('images/projects/' . $proj->image5) }}"
+                                        href="{{ public_path('images/projects/' . $proj->image5) }}" data-glightbox
+                                        data-gallery="project-1"><img src="{{ public_path('images/projects/' . $proj->image5) }}"
                                             alt="" /></a>
                                 </figure>
                         @endif

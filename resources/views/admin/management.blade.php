@@ -44,7 +44,7 @@
                                                 <p class="card-text">{{ $item->position }}</p>
                                             </div>
                                             <div class="col  ">
-                                                <img src="{{ asset('images/profiles/' . $item->picture) }}" alt=""
+                                                <img src="{{ public_path('images/profiles/' . $item->picture) }}" alt=""
                                                     srcset="" style="border-radius: 100px; max-height:200px;">
                                             </div>
                                             <div class="col  ">
@@ -239,7 +239,7 @@
                                             <div class="col ">
                                                 <h4 class="card-title">{{ $item->name }}</h4>
                                                 <p class="card-text">
-                                                    <img src="{{ asset('images/partners/' . $item->logo) }}"
+                                                    <img src="{{ public_path('images/partners/' . $item->logo) }}"
                                                         alt="" srcset="" style="max-height:200px;">
                                                 </p>
                                             </div>
