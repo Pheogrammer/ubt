@@ -104,6 +104,7 @@
                         </div>
                         <!-- /.card -->
                         <a href="{{ route('editBlog', $blog->id) }}" class="btn btn-secondary">Edit Blog</a>
+                        <a href="{{ route('deleteblog', $blog->id) }}" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this blog?')">Delete Blog</a>
                         <a href="{{ route('Adminblog') }}" class="btn btn-primary">Go Back</a>
                     </div>
                     <!-- /.blog -->

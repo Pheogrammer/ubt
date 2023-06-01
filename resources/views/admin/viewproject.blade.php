@@ -143,6 +143,8 @@
                 <aside class="col-md-4 sidebar text-center text-md-end">
                     <div class="btn-group">
                         <a href="{{ route('EditProject', $project->id) }}" class="btn btn-secondary">Edit Project</a>
+                        <a href="{{ route('deleteproject', $project->id) }}"  onclick="return confirm('Are you sure you want to delete this Project?')" class="btn btn-secondary">Delete Project</a>
+
                         <a href="{{ route('Adminblog') }}" class="btn btn-primary">Go Back</a>
 
                         <!--/.dropdown-menu -->

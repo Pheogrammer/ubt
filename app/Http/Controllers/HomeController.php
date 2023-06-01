@@ -482,9 +482,25 @@ class HomeController extends Controller
 
     public function deleteblog($id)
     {
+        $blog = Blog::find($id);
+
+        if ($blog) {
+            $blog->delete();
+            return redirect()->route('Adminblog')->with(['status' => 'Blog deleted successfully']);
+        } else {
+            return redirect()->back()->with(['error' => 'Blog not found']);
+        }
     }
 
     public function deleteproject($id)
     {
+        $project = Project::find($id);
+
+        if ($project) {
+            $project->delete();
+            return redirect()->route('Adminproject')->with(['status' => 'Blog deleted successfully']);
+        } else {
+            return redirect()->back()->with(['error' => 'Blog not found']);
+        }
     }
 }
