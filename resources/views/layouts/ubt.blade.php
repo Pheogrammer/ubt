@@ -1,3 +1,7 @@
+@php
+    use App\Models\Contact;
+    $contact = Contact::first();
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,7 +54,7 @@
                                         <a class="nav-link " href="projects">Projects</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="blog">Blog</a>
+                                        <a class="nav-link" href="readblog">Blog</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact">Contact Us</a>
@@ -60,8 +64,8 @@
                                 <div class="offcanvas-footer d-lg-none">
                                     <div>
                                         <a href="" class="link-inverse"><span
-                                                class="__cf_email__">[email&#160;protected]</span></a>
-                                        <br /> 000 000 000 0 <br />
+                                                class="__cf_email__">{{ $contact->email }}</span></a>
+                                        <br /> {{ $contact->phone }} <br />
                                         <nav class="nav social social-white mt-4">
                                             <a href="#">
                                                 <i class="fab fa-twitter    "></i>
@@ -147,10 +151,9 @@
                         <!-- /.widget -->
                         <div class="widget mb-8">
                             <h4 class="widget-title text-white mb-3">Contact Info</h4>
-                            <address> Adress </address>
-                            <a
-                                href="">Email</a><br />
-                            000 000 000 0
+                            <address> Adress: {{ $contact->adress }} </address>
+                            <a href="">Email: {{ $contact->email }}</a><br />
+                            {{ $contact->phone }}
                         </div>
                         <!-- /.widget -->
                         <div class="widget mb-8">
@@ -240,8 +243,9 @@
                                 <div class="widget">
                                     <h4 class="widget-title text-white mb-3">Get in Touch</h4>
                                     <address class="pe-xl-15 pe-xxl-17">Our Adress</address>
-                                    <a href="">email@email.com</a><br />
-                                    000 000 000 0
+                                    <a href="">{{ $contact->email }}</a><br />
+                                    {{ $contact->phone }} <br>
+                                    {{ $contact->address }}
                                 </div>
                                 <!-- /.widget -->
                             </div>
@@ -264,15 +268,13 @@
                                 <div class="widget">
                                     <h4 class="widget-title text-white mb-3">Our Newsletter</h4>
                                     {{-- <p class="mb-5">Subscribe to our newsletter to get our news & deals delivered to --}}
-                                        you.</p>
+                                    you.</p>
                                     <div class="newsletter-wrapper">
                                         <!-- Begin Mailchimp Signup Form -->
                                         <div id="mc_embed_signup2">
-                                            <form
-                                            {{-- action="" method="post" id="mc-embedded-subscribe-form2"
+                                            <form {{-- action="" method="post" id="mc-embedded-subscribe-form2"
                                                 name="mc-embedded-subscribe-form" class="validate dark-fields"
-                                                target="_blank" novalidate --}}
-                                                >
+                                                target="_blank" novalidate --}}>
                                                 @csrf
                                                 <div id="mc_embed_signup_scroll2">
                                                     <div class="mc-field-group input-group form-floating">

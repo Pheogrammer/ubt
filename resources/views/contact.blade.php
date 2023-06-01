@@ -3,6 +3,10 @@
     Contact Us
 @endsection
 @section('content')
+    @php
+        use App\Models\Contact;
+        $contact = Contact::first();
+    @endphp
     <section class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-400 text-white"
         data-image-src="/img/photos/5032.jpg">
         <div class="container pt-17 pb-20 pt-md-19 pb-md-21 text-center">
@@ -48,7 +52,8 @@
                                         </div>
                                         <div class="align-self-start justify-content-start">
                                             <h5 class="mb-1">Address</h5>
-                                            <address>Adress <br class="d-none d-md-block" />Our City</address>
+                                            <address>Adress <br class="d-none d-md-block" />{{ $contact->address }}
+                                            </address>
                                         </div>
                                     </div>
                                     <!--/div -->
@@ -59,7 +64,7 @@
                                         </div>
                                         <div>
                                             <h5 class="mb-1">Phone</h5>
-                                            <p>000 000 000 0 <br />000 000 000 0</p>
+                                            <p>{{ $contact->phone }}</p>
                                         </div>
                                     </div>
                                     <!--/div -->
@@ -70,9 +75,7 @@
                                         </div>
                                         <div>
                                             <h5 class="mb-1">E-mail</h5>
-                                            <p class="mb-0"><a href="" class="link-body">Email 1</a>
-                                            </p>
-                                            <p class="mb-0"><a href="" class="link-body">Email 2</a>
+                                            <p class="mb-0"><a href="" class="link-body">{{ $contact->email }}</a>
                                             </p>
                                         </div>
                                     </div>
@@ -89,7 +92,7 @@
                 <!-- /column -->
             </div>
             <!-- /.row -->
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
                     <h2 class="display-4 mb-3 text-center">Send us an email</h2>
                     <p class="lead text-center mb-10">Reach out to us from our contact form and we will get back to you
@@ -163,7 +166,7 @@
                     <!-- /form -->
                 </div>
                 <!-- /column -->
-            </div>
+            </div> --}}
             <!-- /.row -->
         </div>
         <!-- /.container -->

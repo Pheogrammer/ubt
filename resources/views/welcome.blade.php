@@ -3,6 +3,14 @@
     Home
 @endsection
 @section('content')
+    @php
+        use App\Models\Partner;
+        use App\Models\Staff;
+        // use App\
+        // $contact = Contact::first();
+        $staffz = Staff::orderby('name', 'asc')->get();
+        $partnerz = Partner::orderby('name', 'asc')->get();
+    @endphp
     <section class="section-frame br-fix overflow-hidden" id="home">
         <div class="wrapper image-wrapper bg-cover bg-image bg-overlay bg-overlay-500"
             data-image-src="{{ asset('/img/photos/bg26.jpg') }}">
@@ -170,8 +178,9 @@
                     <div class="row gx-lg-8 gx-xl-12 gy-11 text-center d-flex align-items-end">
                         <div class="col-sm col-md col-lg mx-auto">
                             <div class="px-md-3 px-lg-0 px-xl-3">
-                                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5" style="color:#6b0304;"> <i class="fa fa-map" style="color:#6b0304;"
-                                        aria-hidden="true"></i> </div>
+                                <div class="icon btn btn-block btn-lg btn-soft-purple pe-none mb-5" style="color:#6b0304;">
+                                    <i class="fa fa-map" style="color:#6b0304;" aria-hidden="true"></i>
+                                </div>
                                 <h3 class="fs-22">Mission</h3>
                                 <p class="mb-2">Our mission is to provide a well-organized, coordinated, and resourceful
                                     cultural and arts center of excellence that focuses on nurturing the creativity of young
@@ -246,23 +255,12 @@
                         <br>
                         <div class="px-lg-5">
                             <div class="row gx-0 gx-md-8 gx-xl-12 gy-8 align-items-center">
-                                <div class="col-4 col-md-2">
-                                    <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img
-                                            src="{{ asset('img/basata.jpg') }}" alt="" /></figure>
-                                </div>
-                                <!--/column -->
-                                <div class="col-4 col-md-2">
-                                    <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img
-                                            src="{{ asset('img/Nafasi.png') }}" alt="" /></figure>
-                                </div>
-                                <!--/column -->
-                                <div class="col-4 col-md-2">
-                                    <img src="{{ asset('img/Switzerland.jpg') }}" alt="" height="80px" />
-                                </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <!--/column -->
-                                <div class="col-4 col-md-2">
-                                    <img src="{{ asset('img/RNE.png') }}" alt="" height="80px" />
-                                </div>
+                                @foreach ($partnerz as $ptnez)
+                                    <div class="col-4 col-md-2">
+                                        <img src="{{ asset('img/RNE.png') }}" alt=""
+                                            style="max-width: 150%; max-height: 150%;" />
+                                    </div>
+                                @endforeach
                                 {{-- <!--/column -->
                               <div class="col-4 col-md-2">
                                 <figure class="px-5 px-md-0 px-lg-2 px-xl-3 px-xxl-4"><img src="assets/img/brands/c5.png" alt="" /></figure>
@@ -306,123 +304,26 @@
                         data-items-md="2" data-items-xs="1">
                         <div class="swiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t1.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Masudi Bashiri Kandoro</h4>
-                                    <div class="meta mb-2">Managing Director</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t2.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Nguza A Kinonda</h4>
-                                    <div class="meta mb-2">Finance Manager</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t3.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Emmanuel Mabodo</h4>
-                                    <div class="meta mb-2">Project Coordinato</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t4.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Dimar Adolph</h4>
-                                    <div class="meta mb-2">Program and Performing Arts Manager</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Issa Bakari</h4>
-                                    <div class="meta mb-2"> Assistant Program and Performing Arts Manager</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Suleiman Hassan</h4>
-                                    <div class="meta mb-2"> Graphic Designer and Social Media Manager</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Glory Michael Nyangusi</h4>
-                                    <div class="meta mb-2"> Administrator and Community Manager</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Goodluck Mwakasungura</h4>
-                                    <div class="meta mb-2"> Production Manager</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
-                                <div class="swiper-slide">
-                                    <img class="rounded-circle w-20 mx-auto mb-4" src="/img/avatars/t5.jpg"
-                                        alt="" />
-                                    <h4 class="mb-1">Jacob Mulikuza</h4>
-                                    <div class="meta mb-2"> Project Consultant</div>
-                                    <nav class="nav social justify-content-center text-center mb-0">
-                                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                                        <a href="#"><i class="fab fa-twitter"></i></a>
-                                        <a href="#"><i class="fab fa-facebook"></i></a>
-                                    </nav>
-                                    <!-- /.social -->
-                                </div>
-                                <!--/.swiper-slide -->
+                                @foreach ($staffz as $stfz)
+                                    <div class="swiper-slide">
+                                        <div style="width: 120px; height: 120px; overflow: hidden; margin: 0 auto;">
+                                            <img class="rounded-circle w-100 h-100"
+                                                src="{{ asset('images/profiles/' . $stfz->picture) }}" alt=""
+                                                style="object-fit: cover;">
+                                        </div>
+                                        <h4 class="mb-1">{{ $stfz->name }}</h4>
+                                        <div class="meta mb-2">{{ $stfz->position }}</div>
+                                        <nav class="nav social justify-content-center text-center mb-0">
+                                            <a href="#" title="{{ $stfz->linkedin }}"><i
+                                                    class="fab fa-linkedin"></i></a>
+                                            <a href="#" title="{{ $stfz->twitter }}"><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a href="#" title="{{ $stfz->email }}"><i
+                                                    class="fab fa-email"></i></a>
+                                        </nav>
+                                        <!-- /.social -->
+                                    </div>
+                                @endforeach
                             </div>
                             <!--/.swiper-wrapper -->
                         </div>
@@ -447,39 +348,18 @@
                 <!-- /column -->
             </div>
             <!-- /.row -->
-            <div class="swiper-container grid-view mb-19" data-margin="30" data-dots="true" data-items-xl="3"
-                data-items-md="2" data-items-xs="1">
-                <div class="swiper">
-                    <div class="swiper-wrapper ">
-                        @if (count($projects) > 0)
-                            )
-                            <!--/.swiper-slide -->
-                            <div class="swiper-slide">
-                                <figure class="rounded mb-6"><img src="{{ asset('/img/photos/pd12.jpg') }}"
-                                        alt="" /><a class="item-link" href="/img/photos/pd12-full.jpg"
-                                        data-glightbox data-gallery="projects-group"><i class="fa fa-focus-add"></i></a>
-                                </figure>
-                                <div class="project-details d-flex justify-content-center flex-column">
-                                    <div class="post-header">
-                                        <h2 class="post-title h3"><a href="#" class="link-dark">Porta
-                                                Ornare Cras</a></h2>
-                                        <div class="post-category text-ash">Branding</div>
-                                    </div>
-                                    <!-- /.post-header -->
-                                </div>
-                                <!-- /.project-details -->
-                            </div>
-                        @else
-                            {{-- <h2 class="post-title h3"><a href="#" class="link-dark">No posted projects for now,
-                                    come back later!</a></h2> --}}
-                        @endif
 
-                        <!--/.swiper-slide -->
-                    </div>
-                    <!--/.swiper-wrapper -->
-                </div>
-                <!-- /.swiper -->
+        </div>
+        <div class="container py-15 py-md-0">
+            <div class="row">
+                <a href="{{ url('viewproject') }}" class="col-lg-10 col-xl-8  mx-auto text-center">
+                    <h2 class="fs-16 text-uppercase text-light mb-3 btn btn-danger">View Our Latest Projects</h2>
+
+                </a>
+                <!-- /column -->
             </div>
+            <!-- /.row -->
+
         </div>
         <!-- /.container -->
 
