@@ -13,10 +13,25 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
+                        @if (Session::has('message'))
+                            <div class="alert alert-success">
+                                <ul>
+                                    <li>{{ Session::get('message') }}</li>
+                                </ul>
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <form action="{{ route('saveEditedProject') }}" method="post" enctype="multipart/form-data">
                             @csrf
-                            <input type="text" name="id" value="{{$project->id}}" hidden>
+                            <input type="text" name="id" value="{{ $project->id }}" hidden>
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                                 <div class="col  ">
                                     <div class="form-group">
@@ -37,7 +52,7 @@
                                 <div class="col  ">
                                     <div class="form-group">
                                         <label for="">Main Image</label>
-                                        <input type="file"  name="image1" id="" class="form-control"
+                                        <input type="file" name="image1" id="" class="form-control"
                                             placeholder="" accept="image/*" aria-describedby="helpId">
                                     </div>
                                 </div>
@@ -85,7 +100,7 @@
                                 <div class="col  ">
                                     <div class="form-group">
                                         <label for="">Image 2</label>
-                                        <input type="file"  name="image2" id="" class="form-control"
+                                        <input type="file" name="image2" id="" class="form-control"
                                             placeholder="" value="{{ old('image2') }}" accept="image/*"
                                             aria-describedby="helpId">
                                     </div>
@@ -93,7 +108,7 @@
                                 <div class="col  ">
                                     <div class="form-group">
                                         <label for="">Image 3</label>
-                                        <input type="file"  name="image3" id="" class="form-control"
+                                        <input type="file" name="image3" id="" class="form-control"
                                             placeholder="" value="{{ old('image3') }}" accept="image/*"
                                             aria-describedby="helpId">
                                     </div>

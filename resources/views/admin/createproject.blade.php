@@ -13,7 +13,22 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
+                        @if (Session::has('message'))
+                            <div class="alert alert-success">
+                                <ul>
+                                    <li>{{ Session::get('message') }}</li>
+                                </ul>
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <form action="{{ route('SaveCreateProject') }}" method="post" enctype="multipart/form-data">
                             @csrf
                             <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">

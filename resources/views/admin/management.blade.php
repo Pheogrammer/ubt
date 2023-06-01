@@ -13,6 +13,22 @@
                                 {{ session('status') }}
                             </div>
                         @endif
+                        @if (Session::has('message'))
+                            <div class="alert alert-success">
+                                <ul>
+                                    <li>{{ Session::get('message') }}</li>
+                                </ul>
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <!-- Button trigger modal -->
 
 
@@ -341,40 +357,42 @@
 
                         <div class="card-body">
 
-                                <form action="{{route('changeContact')}}" method="post">
-                                    @csrf
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="">Office Phone</label>
-                                                <input type="text" value="{{ $contact->phone ?? '' }}" name="phone" id="" class="form-control"
-                                                    placeholder="" aria-describedby="helpId">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="">Office Email</label>
-                                                <input type="email" value="{{ $contact->email ?? '' }}" name="email" id="" class="form-control"
-                                                    placeholder="" aria-describedby="helpId">
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-group">
-                                                <label for="">Office Address</label>
-                                                <input type="text" value="{{ $contact->address ?? '' }}" name="address" id="" class="form-control"
-                                                    placeholder="" aria-describedby="helpId">
-                                            </div>
+                            <form action="{{ route('changeContact') }}" method="post">
+                                @csrf
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Office Phone</label>
+                                            <input type="text" value="{{ $contact->phone ?? '' }}" name="phone"
+                                                id="" class="form-control" placeholder=""
+                                                aria-describedby="helpId">
                                         </div>
                                     </div>
-                                    <br>
-                                    <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
-                                        <div class="col  ">
-                                            <button type="submit"
-                                                class="btn btn-primary">Update</button>
-                                            <a href="#" class="btn btn-danger">Cancel</a>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Office Email</label>
+                                            <input type="email" value="{{ $contact->email ?? '' }}" name="email"
+                                                id="" class="form-control" placeholder=""
+                                                aria-describedby="helpId">
                                         </div>
                                     </div>
-                                </form>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="">Office Address</label>
+                                            <input type="text" value="{{ $contact->address ?? '' }}" name="address"
+                                                id="" class="form-control" placeholder=""
+                                                aria-describedby="helpId">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
+                                    <div class="col  ">
+                                        <button type="submit" class="btn btn-primary">Update</button>
+                                        <a href="#" class="btn btn-danger">Cancel</a>
+                                    </div>
+                                </div>
+                            </form>
 
 
                         </div>

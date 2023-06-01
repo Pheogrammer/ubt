@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-10 col-xl-8 mx-auto">
                     <div class="post-header">
-<br><br><br>
+                        <br><br><br>
                         <!-- /.post-category -->
                         <h1 class="display-1 mb-4" style="color:antiquewhite;">{{ $blog->title }}</h1>
 
@@ -29,51 +29,56 @@
                 <div class="col-lg-10 mx-auto">
                     <div class="blog single mt-n17">
                         <div class="card">
-                            @if($blog->image1!=NULL)
-                            <figure class="card-img-top"><img src="{{asset('images/blogs/'.$blog->image1)}}" alt="" /></figure>
+                            @if ($blog->image1 != null)
+                                <figure class="card-img-top"><img src="{{ asset('images/blogs/' . $blog->image1) }}"
+                                        alt="" /></figure>
                             @endif
                             <div class="card-body">
                                 <div class="classic-view">
                                     <article class="post">
                                         <div class="post-content mb-5">
                                             <h2 class="h1 mb-4">{{ $blog->title }}</h2>
-                                            <p>{!!$blog->paragraph1!!}</p>
+                                            <p>{!! $blog->paragraph1 !!}</p>
                                             <div class="row g-6 mt-3 mb-10">
-                                                @if($blog->image2!=NULL)
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="{{asset('images/blogs/'.$blog->image2)}}"
-                                                            data-glightbox="title: Heading; description: Purus Vulputate Sem Tellus Quam"
-                                                            data-gallery="post"> <img src="{{asset('images/blogs/'.$blog->image2)}}"
-                                                                alt="" /></a></figure>
-                                                </div>
+                                                @if ($blog->image2 != null)
+                                                    <div class="col-md-6">
+                                                        <figure class="hover-scale rounded cursor-dark"><a
+                                                                href="{{ asset('images/blogs/' . $blog->image2) }}"
+                                                                data-glightbox="title: Heading; description: Purus Vulputate Sem Tellus Quam"
+                                                                data-gallery="post"> <img
+                                                                    src="{{ asset('images/blogs/' . $blog->image2) }}"
+                                                                    alt="" /></a></figure>
+                                                    </div>
                                                 @endif
                                                 <!--/column -->
-                                                @if($blog->image3!=NULL)
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="{{asset('images/blogs/'.$blog->image3)}}" data-glightbox
-                                                            data-gallery="post"> <img src="{{asset('images/blogs/'.$blog->image3)}}"
-                                                                alt="" /></a></figure>
-                                                </div>
+                                                @if ($blog->image3 != null)
+                                                    <div class="col-md-6">
+                                                        <figure class="hover-scale rounded cursor-dark"><a
+                                                                href="{{ asset('images/blogs/' . $blog->image3) }}"
+                                                                data-glightbox data-gallery="post"> <img
+                                                                    src="{{ asset('images/blogs/' . $blog->image3) }}"
+                                                                    alt="" /></a></figure>
+                                                    </div>
                                                 @endif
                                                 <!--/column -->
-                                                @if($blog->image4!=NULL)
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="{{asset('images/blogs/'.$blog->image4)}}" data-glightbox
-                                                            data-gallery="post"> <img src="{{asset('images/blogs/'.$blog->image4)}}"
-                                                                alt="" /></a></figure>
-                                                </div>
+                                                @if ($blog->image4 != null)
+                                                    <div class="col-md-6">
+                                                        <figure class="hover-scale rounded cursor-dark"><a
+                                                                href="{{ asset('images/blogs/' . $blog->image4) }}"
+                                                                data-glightbox data-gallery="post"> <img
+                                                                    src="{{ asset('images/blogs/' . $blog->image4) }}"
+                                                                    alt="" /></a></figure>
+                                                    </div>
                                                 @endif
                                                 <!--/column -->
-                                                @if($blog->image5!=NULL)
-                                                <div class="col-md-6">
-                                                    <figure class="hover-scale rounded cursor-dark"><a
-                                                            href="{{asset('images/blogs/'.$blog->image5)}}" data-glightbox
-                                                            data-gallery="post"> <img src="{{asset('images/blogs/'.$blog->image5)}}"
-                                                                alt="" /></a></figure>
-                                                </div>
+                                                @if ($blog->image5 != null)
+                                                    <div class="col-md-6">
+                                                        <figure class="hover-scale rounded cursor-dark"><a
+                                                                href="{{ asset('images/blogs/' . $blog->image5) }}"
+                                                                data-glightbox data-gallery="post"> <img
+                                                                    src="{{ asset('images/blogs/' . $blog->image5) }}"
+                                                                    alt="" /></a></figure>
+                                                    </div>
                                                 @endif
                                                 <!--/column -->
                                             </div>
@@ -85,7 +90,7 @@
                                                     erat porttitor ligula lacinia odio sem nec elit purus.</p>
                                                 <footer class="blockquote-footer">Very important person</footer>
                                             </blockquote> --}}
-                                            <p>{!!$blog->paragraph2!!}</p>
+                                            <p>{!! $blog->paragraph2 !!}</p>
                                         </div>
                                         <!-- /.post-footer -->
                                     </article>
@@ -98,8 +103,8 @@
                             <!-- /.card-body -->
                         </div>
                         <!-- /.card -->
-                        <a href="{{route('editBlog',$blog->id)}}" class="btn btn-secondary">Edit Blog</a>
-                        <a href="{{route('Adminblog')}}" class="btn btn-primary">Go Back</a>
+                        <a href="{{ route('editBlog', $blog->id) }}" class="btn btn-secondary">Edit Blog</a>
+                        <a href="{{ route('Adminblog') }}" class="btn btn-primary">Go Back</a>
                     </div>
                     <!-- /.blog -->
                 </div>

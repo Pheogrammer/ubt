@@ -12,7 +12,7 @@
                         <div class="post-category text-line">
                         </div>
                         <!-- /.post-category -->
-                        <h1 class="display-1 mb-3" style="color:rgb(239, 235, 203);">{{$project->title}}</h1>
+                        <h1 class="display-1 mb-3" style="color:rgb(239, 235, 203);">{{ $project->title }}</h1>
 
                     </div>
                     <!-- /.post-header -->
@@ -29,15 +29,16 @@
             <div class="row">
                 <div class="col-12">
                     <article class="mt-n21">
-                        @if($project->image1!=NULL)
-                        <figure class="rounded mb-8 mb-md-12"><img src="{{asset('images/projects/'.$project->image1)}}" alt="" /></figure>
+                        @if ($project->image1 != null)
+                            <figure class="rounded mb-8 mb-md-12"><img
+                                    src="{{ asset('images/projects/' . $project->image1) }}" alt="" /></figure>
                         @endif
                         <div class="row">
                             <div class="col-lg-10 offset-lg-1">
                                 <h2 class="display-6 mb-4">About the Project</h2>
                                 <div class="row gx-0">
                                     <div class="col-md-9 text-justify">
-                                        <p>{!!$project->paragraph1!!}</p>
+                                        <p>{!! $project->paragraph1 !!}</p>
                                     </div>
                                     <!--/column -->
                                     {{-- <div class="col-md-2 ms-auto">
@@ -61,51 +62,60 @@
                         </div>
                         <!--/.row -->
                         <div class="row mt-5 gx-md-6 gy-6">
-                            @if($project->image2!=NULL)
-                            <div class="item col-md-6">
-                                <figure class="hover-scale rounded cursor-dark"><a href="{{asset('images/projects/'.$project->image2)}}" data-glightbox
-                                        data-gallery="project-1"><img src="{{asset('images/projects/'.$project->image2)}}" alt="" /></a>
-                                </figure>
-                            </div>
+                            @if ($project->image2 != null)
+                                <div class="item col-md-6">
+                                    <figure class="hover-scale rounded cursor-dark"><a
+                                            href="{{ asset('images/projects/' . $project->image2) }}" data-glightbox
+                                            data-gallery="project-1"><img
+                                                src="{{ asset('images/projects/' . $project->image2) }}" alt="" /></a>
+                                    </figure>
+                                </div>
                             @endif
                             <!--/column -->
-                            @if($project->image3!=NULL)
-                            <div class="item col-md-6">
-                                <figure class="hover-scale rounded cursor-dark"><a href="{{asset('images/projects/'.$project->image3)}}" data-glightbox
-                                        data-gallery="project-1"><img src="{{asset('images/projects/'.$project->image3)}}" alt="" /></a>
-                                </figure>
-                            </div>
+                            @if ($project->image3 != null)
+                                <div class="item col-md-6">
+                                    <figure class="hover-scale rounded cursor-dark"><a
+                                            href="{{ asset('images/projects/' . $project->image3) }}" data-glightbox
+                                            data-gallery="project-1"><img
+                                                src="{{ asset('images/projects/' . $project->image3) }}" alt="" /></a>
+                                    </figure>
+                                </div>
                             @endif
                             <!--/column -->
                         </div>
                         <!-- /.row -->
                         <div class="row mt-8 mt-md-12">
                             <div class="col-md-10 offset-md-1 text-justify">
-                                <p>{!!$project->paragraph2!!}</p>
+                                <p>{!! $project->paragraph2 !!}</p>
                             </div>
                             <!-- /column -->
                         </div>
                         <div class="row mt-5 gx-md-6 gy-6">
-                            @if($project->image4!=NULL)
-                            <div class="item col-md-6">
-                                <figure class="hover-scale rounded cursor-dark"><a href="{{asset('images/projects/'.$project->image4)}}" data-glightbox
-                                        data-gallery="project-1"><img src="{{asset('images/projects/'.$project->image4)}}" alt="" /></a>
-                                </figure>
-                            </div>
+                            @if ($project->image4 != null)
+                                <div class="item col-md-6">
+                                    <figure class="hover-scale rounded cursor-dark"><a
+                                            href="{{ asset('images/projects/' . $project->image4) }}" data-glightbox
+                                            data-gallery="project-1"><img
+                                                src="{{ asset('images/projects/' . $project->image4) }}" alt="" /></a>
+                                    </figure>
+                                </div>
                             @endif
                             <!--/column -->
-                            @if($project->image5!=NULL)
-                            <div class="item col-md-6">
-                                <figure class="hover-scale rounded cursor-dark"><a href="{{asset('images/projects/'.$project->image5)}}" data-glightbox
-                                        data-gallery="project-1"><img src="{{asset('images/projects/'.$project->image5)}}" alt="" /></a>
-                                </figure>
-                            </div>
+                            @if ($project->image5 != null)
+                                <div class="item col-md-6">
+                                    <figure class="hover-scale rounded cursor-dark"><a
+                                            href="{{ asset('images/projects/' . $project->image5) }}" data-glightbox
+                                            data-gallery="project-1"><img
+                                                src="{{ asset('images/projects/' . $project->image5) }}"
+                                                alt="" /></a>
+                                    </figure>
+                                </div>
                             @endif
                             <!--/column -->
                         </div>
                         <div class="row mt-8 mt-md-12">
                             <div class="col-md-10 offset-md-1 text-justify">
-                                <p>{!!$project->paragraph3!!}</p>
+                                <p>{!! $project->paragraph3 !!}</p>
                             </div>
                             <!-- /column -->
                         </div>
@@ -132,8 +142,8 @@
                 <!--/column -->
                 <aside class="col-md-4 sidebar text-center text-md-end">
                     <div class="btn-group">
-                        <a href="{{route('EditProject',$project->id)}}" class="btn btn-secondary">Edit Project</a>
-        <a href="{{route('Adminblog')}}" class="btn btn-primary">Go Back</a>
+                        <a href="{{ route('EditProject', $project->id) }}" class="btn btn-secondary">Edit Project</a>
+                        <a href="{{ route('Adminblog') }}" class="btn btn-primary">Go Back</a>
 
                         <!--/.dropdown-menu -->
                     </div>

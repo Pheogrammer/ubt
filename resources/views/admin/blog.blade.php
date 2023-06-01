@@ -13,7 +13,7 @@
                                 </h2>
                             </div>
                             <div class="col-md-3  ">
-                                <a href="{{route('CreateBlog')}}" class="btn btn-primary">Create New Blog</a>
+                                <a href="{{ route('CreateBlog') }}" class="btn btn-primary">Create New Blog</a>
                             </div>
                         </div>
                     </div>
@@ -24,7 +24,22 @@
                                 {{ session('status') }}
                             </div>
                         @endif
-
+                        @if (Session::has('message'))
+                            <div class="alert alert-success">
+                                <ul>
+                                    <li>{{ Session::get('message') }}</li>
+                                </ul>
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
                         <table class="table">
                             <thead>
                                 <tr>
@@ -41,12 +56,12 @@
                                 @endphp
                                 @foreach ($blog as $item)
                                     <tr>
-                                        <td>{{$try}}</td>
-                                        <td>{{$item->title}}</td>
-                                        <td>{{Str::limit($item->paragraph1, 100, '...')}}</td>
-                                        <td>{{$item->formattedDate}}</td>
+                                        <td>{{ $try }}</td>
+                                        <td>{{ $item->title }}</td>
+                                        <td>{{ Str::limit($item->paragraph1, 100, '...') }}</td>
+                                        <td>{{ $item->formattedDate }}</td>
                                         <td>
-                                            <a href="{{route('Viewblog',$item->id)}}" class="btn btn-primary">View</a>
+                                            <a href="{{ route('Viewblog', $item->id) }}" class="btn btn-primary">View</a>
                                         </td>
                                     </tr>
                                     @php
