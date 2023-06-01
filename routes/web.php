@@ -57,13 +57,14 @@ Route::post('saveEditedProject',[HomeController::class,'saveEditedProject'])->na
 Route::get('management',[HomeController::class,'management'])->name('management')->middleware('auth');
 Route::post('saveStaff',[HomeController::class,'saveStaff'])->name('saveStaff')->middleware('auth');
 Route::post('updatestaff/{id}',[HomeController::class,'updatestaff'])->name('updatestaff')->middleware('auth');
+Route::get('deletestaff/{id}',[HomeController::class,'deletestaff'])->name('deletestaff')->middleware('auth');
+
 Route::post('updatePartner',[HomeController::class,'updatePartner'])->name('updatePartner')->middleware('auth');
 Route::post('changeContact',[HomeController::class,'changeContact'])->name('changeContact')->middleware('auth');
 
 Route::get('deleteblog/{id}',[HomeController::class,'deleteblog'])->name('deleteblog')->middleware('auth');
 Route::get('deleteproject/{id}',[HomeController::class,'deleteproject'])->name('deleteproject')->middleware('auth');
 Route::get('deletepartner/{id}',[HomeController::class,'deletepartner'])->name('deletepartner')->middleware('auth');
-Route::get('deletestaff/{id}',[HomeController::class,'deletestaff'])->name('deletestaffb')->middleware('auth');
 
 //
 

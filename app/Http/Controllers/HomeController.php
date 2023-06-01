@@ -386,6 +386,19 @@ class HomeController extends Controller
 
         return redirect()->back()->with(['status' => 'Staff Updated Successfully']);
     }
+
+    public function deletestaff($id)
+    {
+        $staff = Staff::where('id', $id)->first();
+
+        if ($staff) {
+            $staff->delete();
+            return redirect()->back()->with(['status' => 'Staff deleted successfully']);
+        } else {
+            return redirect()->back()->with(['error' => 'Staff not found']);
+        }
+    }
+
     public function updatePartner(Request $request)
     {
     }
@@ -403,10 +416,6 @@ class HomeController extends Controller
     }
 
     public function deletepartner($id)
-    {
-    }
-
-    public function deletestaff($id)
     {
     }
 }
