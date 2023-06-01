@@ -37,7 +37,7 @@
                                     <article class="post">
                                         <div class="post-content mb-5">
                                             <h2 class="h1 mb-4">{{ $blog->title }}</h2>
-                                            <p>{{$blog->paragraph1}}</p>
+                                            <p>{!!$blog->paragraph1!!}</p>
                                             <div class="row g-6 mt-3 mb-10">
                                                 @if($blog->image2!=NULL)
                                                 <div class="col-md-6">
@@ -85,7 +85,7 @@
                                                     erat porttitor ligula lacinia odio sem nec elit purus.</p>
                                                 <footer class="blockquote-footer">Very important person</footer>
                                             </blockquote> --}}
-                                            <p>{{$blog->paragraph2}}</p>
+                                            <p>{!!$blog->paragraph2!!}</p>
                                         </div>
                                         <!-- /.post-footer -->
                                     </article>

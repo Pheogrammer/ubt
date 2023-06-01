@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+    <link rel="stylesheet" href="{{asset('boot/css/docs.min.css')}}">
 </head>
 <body>
     <div id="app">
@@ -34,16 +36,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav m-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="">{{ __('Staff & Partners') }}</a>
+                            <a class="nav-link" href="{{route('management')}}">{{ __('Staff, Partners & Contacts') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('Adminblog')}}">{{ __('Blog') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">{{ __('Projects') }}</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">{{ __('Contacts') }}</a>
+                            <a class="nav-link" href="{{route('Adminproject')}}">{{ __('Projects') }}</a>
                         </li>
                     </ul>
 
@@ -90,5 +89,10 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{ asset('js/jquery.js') }}"></script>
+      <script src="{{ asset('boot/js/bootstrap.bundle.js') }}"></script>
+
+
+
 </body>
 </html>

@@ -9,11 +9,11 @@
                         <div class="row ${1| ,row-cols-2,row-cols-3, auto,justify-content-md-center,|}">
                             <div class="col  ">
                                 <h2>
-                                    {{ __('Blog Posts') }}
+                                    {{ __('Projects') }}
                                 </h2>
                             </div>
                             <div class="col-md-3  ">
-                                <a href="{{route('CreateBlog')}}" class="btn btn-primary">Create New Blog</a>
+                                <a href="{{ route('CreateProject') }}" class="btn btn-primary">Create New Project</a>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                                     <th>SN</th>
                                     <th>Title</th>
                                     <th>Description</th>
-                                    <th>Create on</th>
+                                    <th>Published On</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -39,14 +39,14 @@
                                 @php
                                     $try = 1;
                                 @endphp
-                                @foreach ($blog as $item)
+                                @foreach ($project as $item)
                                     <tr>
-                                        <td>{{$try}}</td>
-                                        <td>{{$item->title}}</td>
-                                        <td>{{Str::limit($item->paragraph1, 100, '...')}}</td>
-                                        <td>{{$item->formattedDate}}</td>
+                                        <td>{{ $try }}</td>
+                                        <td>{{ $item->title }}</td>
+                                        <td>{{ Str::limit($item->paragraph1, 100, '...') }}</td>
+                                        <td>{{ $item->formattedDate }}</td>
                                         <td>
-                                            <a href="{{route('Viewblog',$item->id)}}" class="btn btn-primary">View</a>
+                                            <a href="{{ route('viewprojectAdmin', $item->id) }}" class="btn btn-primary">View</a>
                                         </td>
                                     </tr>
                                     @php

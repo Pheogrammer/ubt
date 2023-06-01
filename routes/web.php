@@ -46,5 +46,24 @@ Route::get('Viewblog/{id}',[HomeController::class,'Viewblog'])->name('Viewblog')
 Route::get('editBlog/{id}',[HomeController::class,'editBlog'])->name('editBlog')->middleware('auth');
 Route::post('saveeditedBlog',[HomeController::class,'saveeditedBlog'])->name('saveeditedBlog')->middleware('auth');
 
+
+Route::get('Adminproject',[HomeController::class,'Adminproject'])->name('Adminproject')->middleware('auth');
+Route::get('CreateProject',[HomeController::class,'CreateProject'])->name('CreateProject')->middleware('auth');
+Route::post('SaveCreateProject',[HomeController::class,'SaveCreateProject'])->name('SaveCreateProject')->middleware('auth');
+Route::get('viewprojectAdmin/{id}',[HomeController::class,'viewprojectAdmin'])->name('viewprojectAdmin')->middleware('auth');
+Route::get('EditProject/{id}',[HomeController::class,'EditProject'])->name('EditProject')->middleware('auth');
+Route::post('saveEditedProject',[HomeController::class,'saveEditedProject'])->name('saveEditedProject')->middleware('auth');
+
+Route::get('management',[HomeController::class,'management'])->name('management')->middleware('auth');
+Route::post('saveStaff',[HomeController::class,'saveStaff'])->name('saveStaff')->middleware('auth');
+Route::post('updatestaff/{id}',[HomeController::class,'updatestaff'])->name('updatestaff')->middleware('auth');
+Route::post('updatePartner',[HomeController::class,'updatePartner'])->name('updatePartner')->middleware('auth');
+Route::post('changeContact',[HomeController::class,'changeContact'])->name('changeContact')->middleware('auth');
+
+Route::get('deleteblog/{id}',[HomeController::class,'deleteblog'])->name('deleteblog')->middleware('auth');
+Route::get('deleteproject/{id}',[HomeController::class,'deleteproject'])->name('deleteproject')->middleware('auth');
+Route::get('deletepartner/{id}',[HomeController::class,'deletepartner'])->name('deletepartner')->middleware('auth');
+Route::get('deletestaff/{id}',[HomeController::class,'deletestaff'])->name('deletestaffb')->middleware('auth');
+
 //
 
